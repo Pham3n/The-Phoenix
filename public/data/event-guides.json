@@ -1,0 +1,46 @@
+[
+  {
+    "id": "olympus",
+    "name": "Olympus",
+    "icon": "⌁",
+    "cadence": "Five-day cycle",
+    "tagline": "Plan the route before the first horn.",
+    "accent": "gold",
+    "brief": "Use this panel as the clan-approved briefing slot for Trials of Olympus. Add exact routes, target priorities and reward thresholds when the team finalizes them.",
+    "signals": ["Confirm the day and variant shown on the calendar", "Set the shared target order in clan chat", "Record any troop or resource constraints"],
+    "callout": "Planning shell — add clan-specific notes in data/event-guides.json."
+  },
+  {
+    "id": "ragnarok",
+    "name": "Ragnarök",
+    "icon": "ϟ",
+    "cadence": "Two-day cycle",
+    "tagline": "Keep marches, timing and recalls in one rhythm.",
+    "accent": "violet",
+    "brief": "This briefing is intentionally lightweight until your clan records its preferred approach. The calendar remains the source of truth for the live two-day window.",
+    "signals": ["Read the active-day label before committing energy", "Publish the clan’s target or role assignment", "Mark a handoff point before reset"],
+    "callout": "Planning shell — add clan-specific notes in data/event-guides.json."
+  },
+  {
+    "id": "dark-omens",
+    "name": "Dark Omens",
+    "icon": "◈",
+    "cadence": "Two-day cycle",
+    "tagline": "Turn scattered alerts into a clear night watch.",
+    "accent": "crimson",
+    "brief": "Use this section for your response plan, preferred scouting cadence and any clan announcement copy. The schedule below reads directly from the supplied calendar file.",
+    "signals": ["Check the active event status in the header", "Share the current target priority", "Add outcomes that future officers should preserve"],
+    "callout": "Planning shell — add clan-specific notes in data/event-guides.json."
+  },
+  {
+    "id": "tinman",
+    "name": "Tinman",
+    "icon": "◇",
+    "cadence": "Clan briefing slot",
+    "tagline": "Keep the playbook ready for the next appearance.",
+    "accent": "silver",
+    "brief": "Tinman is held here as a dedicated command tab even though it is not present in the supplied calendar at this time. Fill in the scheduling and troop notes as your clan confirms them.",
+    "signals": ["Add timing once the event is confirmed", "Save a clear troop example per tier", "Document how rewards should be prioritized"],
+    "callout": "No Tinman entries found in the current .ics file."
+  }
+]

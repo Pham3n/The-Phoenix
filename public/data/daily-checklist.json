@@ -1,0 +1,9 @@
+[
+  {"id":"gifts","label":"Claim daily gifts and timed rewards","hint":"Clear anything that expires before the next reset."},
+  {"id":"quests","label":"Review daily quests and orders","hint":"Prioritize actions that support today’s active event."},
+  {"id":"build","label":"Check building and research queues","hint":"Avoid idle queues during the reset cycle."},
+  {"id":"marches","label":"Review active marches and wounded troops","hint":"Recall, reinforce or heal with the current plan in mind."},
+  {"id":"help","label":"Give and collect clan help","hint":"Keep shared progress moving for the whole clan."},
+  {"id":"contribute","label":"Make clan contribution or trade check","hint":"Use the clan’s current contribution priority."},
+  {"id":"intel","label":"Read active-event intel","hint":"Check the calendar and event briefing before spending energy."}
+]

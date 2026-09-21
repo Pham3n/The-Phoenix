@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>PNX Royal — Clan Command</title>
+  </head>
+  <body>
+    <div class="page-shell" id="top">
+      <section class="hero" aria-labelledby="royal-title">
+        <div class="hero-placeholder" aria-hidden="true"><span>♛</span><small>PNX ROYAL<br>logo placeholder</small></div>
+        <div class="hero-content">
+          <span class="eyebrow">Royal command brief · Total Battle</span>
+          <h1 id="royal-title">Lead the clan with a steadier hand.</h1>
+          <p class="hero-subtitle">The shared PNX field ledger for event timing, reset-aware routines, and troop examples — presented in a formal royal palette.</p>
+          <div class="hero-actions"><a class="button" href="#calendar"><span>✦</span> Open event calendar</a><a class="button ghost" href="#troops"><span>◌</span> Browse troop library</a></div>
+        </div>
+      </section>
+      <div class="command-grid">
+        <nav class="section-nav" aria-label="Command sections"><span class="section-nav-title">Command index</span><a href="#events"><span class="nav-dot"></span>Major event briefings</a><a href="#calendar"><span class="nav-dot"></span>Calendar watch</a><a href="#checklist"><span class="nav-dot"></span>Daily readiness</a><a href="#troops"><span class="nav-dot"></span>Troop examples</a></nav>
+        <div class="content-stack">
+          <section class="section-card" id="events"><div class="section-heading"><div><span class="eyebrow">01 · Four major events</span><h2>Briefing deck</h2></div><p>Dedicated command tabs for Olympus, Ragnarök, Dark Omens and Tinman. Everyone sees the same shared clan information.</p></div><div id="event-guides"><div class="empty-state">Loading event briefings…</div></div></section>
+          <section class="section-card" id="calendar"><div class="section-heading"><div><span class="eyebrow">02 · Supplied iCalendar</span><h2>Calendar watch</h2></div><p>The calendar reads directly from <strong>data/tb-events.ics</strong>. The header automatically reflects any active event window.</p></div><div class="calendar-layout"><div class="calendar-frame"><div id="event-calendar" aria-label="Total Battle event calendar"></div></div><aside class="calendar-note"><div><span class="eyebrow">Reset convention</span><h3>One clock. Every realm.</h3><p><strong>R</strong> is 17:00 UTC. Through 12 hours after reset, the clock reads <strong>R+1</strong> to <strong>R+12</strong>; after that it counts down as <strong>R-11</strong> to <strong>R-1</strong>.</p></div><div class="key"><span class="key-item"><i class="key-swatch"></i>Olympus / standard events</span><span class="key-item"><i class="key-swatch violet"></i>Ragnarök</span><span class="key-item"><i class="key-swatch crimson"></i>Dark Omens</span><span class="key-item"><i class="key-swatch silver"></i>Tinman (reserved)</span></div></aside></div></section>
+          <section class="section-card" id="checklist"><div class="section-heading"><div><span class="eyebrow">03 · Reset-aware routine</span><h2>Daily readiness</h2></div><p>Shared checklist state is local to this browser and clears automatically on the next game-day cycle at 17:00 UTC.</p></div><div id="daily-checklist"><div class="empty-state">Loading the daily ledger…</div></div></section>
+          <section class="section-card" id="troops"><div class="section-heading"><div><span class="eyebrow">04 · Editable data shell</span><h2>Troop examples</h2></div><p>Two levels deep: open a target family, then a G5–G7 tier. Replace placeholder text in <strong>data/troop-examples.json</strong> when testing is complete.</p></div><div id="troop-library"><div class="empty-state">Loading troop reference…</div></div></section>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
