@@ -39,7 +39,7 @@
     "cadence": "SUMMONS:5 TIME:11mins",
     "tagline": "make it to atleast one summon",
     "accent": "silver",
-    "brief": "Tinman is held here as a dedicated command tab even though it is not present in the supplied calendar at this time. Fill in the scheduling and troop notes as your clan confirms them.",
+    "brief": "try to reach atleast the first set of Scrolls of Triumph",
     "signals": ["R+1", "R+6", "R+12", "R-6", "R-1"],
     "callout": "SilverDay event - post your city location on MOONPLAY"
   }
