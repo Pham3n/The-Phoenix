@@ -1,12 +1,12 @@
 # PNXBird
 
-PNXBird is a static, client-side clan command hub for the PNX community and
+PNXBird is a static, client-side clan command hub for the PNX clan on
 the Total Battle game. It provides event briefings, calendar visibility, reset
-timers, daily readiness tracking, and expandable troop-reference content.
+timers, daily readiness tracking, and soon, expandable troop-reference content.
 
 ## Features
 
-- **Moonwatch dashboard:** `index.html` is the main entry point and dynamically
+- **Moon dashboard:** `index.html` is the main entry point and dynamically
   loads the Moon, Sun, or Royal themed view.
 - **Event briefings:** Shared guidance for Olympus, Ragnarök, Dark Omens, and
   Tinman.
@@ -16,9 +16,9 @@ timers, daily readiness tracking, and expandable troop-reference content.
   game-day reset convention.
 - **Daily readiness:** Checklist items are stored in browser local storage and
   reset for each game-day cycle.
-- **Troop reference:** Expandable target families and G5–G7 example tiers are
+- **(soon)Troop reference:** Expandable target families and G5–G7 example tiers are
   populated from JSON data.
-- **Themed pages:** `moon.html`, `sun.html`, and `royal.html` provide alternate
+- **(soon)Themed pages:** `moon.html`, `sun.html`, and `royal.html` provide alternate
   presentation themes using shared dashboard behavior.
 
 ## Repository layout
@@ -32,13 +32,10 @@ timers, daily readiness tracking, and expandable troop-reference content.
 | `data/troop-examples.json` | Expandable troop-reference data |
 | `data/tb-events.ics` | Supplied Total Battle event calendar |
 | `brand/` | Logos, hero artwork, and other visual assets |
-| `src/` | React/Vite-style scaffold with routing, theme context, reusable UI components, Google Maps integration, and a Manus login dialog |
 
 ## Current implementation state
 
-The static HTML dashboard is the active application surface. The React code in
-`src/` is a separate scaffold: `src/pages/Home.tsx` remains an example page and
-is not currently wired to the clan hub pages.
+The static HTML dashboard is the active application surface.
 
 The dashboard loads Google Fonts, FullCalendar, and ical.js from CDNs at
 runtime. No package manifest or build configuration is currently present in the

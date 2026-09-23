@@ -9,10 +9,6 @@ instructions: |
     supplied iCalendar file.
   - brand/ contains logos and other visual assets.
 
-  The src/ directory has intentionally been removed. Do not recreate a React
-  or Vite application, migrate the dashboard to a framework, or add build
-  tooling unless explicitly requested.
-
   Preserve the existing data-driven behavior:
   - Read event content from data/event-guides.json.
   - Read checklist content from data/daily-checklist.json.
