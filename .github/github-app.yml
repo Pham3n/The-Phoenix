@@ -1,0 +1,34 @@
+instructions: |
+  PNXBird is a static, client-side clan command hub for the PNX clan and the
+  Total Battle game.
+
+  The active application is the root HTML dashboard:
+  - index.html is the main entry point.
+  - moon.html, sun.html, and royal.html are themed page views.
+  - data/ contains event guides, checklist data, troop examples, and the
+    supplied iCalendar file.
+  - brand/ contains logos and other visual assets.
+
+  Preserve the existing data-driven behavior:
+  - Read event content from data/event-guides.json.
+  - Read checklist content from data/daily-checklist.json.
+  - Read troop content from data/troop-examples.json.
+  - Read calendar events from data/tb-events.ics.
+  - Keep the 17:00 UTC game-day reset convention intact.
+
+  Prefer small, surgical changes. Keep browser behavior accessible and
+  compatible with static hosting. Do not add dependencies unless explicitly
+  requested. Never commit credentials, API keys, or other secrets.
+
+scripts:
+  - name: Serve static dashboard
+    command: python -m http.server 4173
+  - name: Check repository status
+    command: git status --short
+
+server_ready_pattern: '(?i)Serving HTTP on .* port (4173)'
+auto_open_in_browser: true
+
+automation:
+  auto_issue_session: true
+  remote_control: false
