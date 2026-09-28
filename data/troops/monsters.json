@@ -1,0 +1,152 @@
+{
+  "M4": {
+    "label": "Monsters 4",
+    "units": [
+      {
+        "name": "Wolves",
+        "aliases": [
+          "Beasts"
+        ],
+        "count": 400,
+        "image": "./data/troops/images/monster.svg"
+      },
+      {
+        "name": "Ogres",
+        "aliases": [
+          "Brutes"
+        ],
+        "count": 250,
+        "image": "./data/troops/images/monster.svg"
+      },
+      {
+        "name": "Wyrmlings",
+        "aliases": [
+          "Flying Monsters"
+        ],
+        "count": 100,
+        "image": "./data/troops/images/monster.svg"
+      }
+    ],
+    "notes": "Placeholder example \u2014 replace the counts and unit names with clan-tested values."
+  },
+  "M5": {
+    "label": "Monsters 5",
+    "units": [
+      {
+        "name": "Wolves",
+        "aliases": [
+          "Beasts"
+        ],
+        "count": 600,
+        "image": "./data/troops/images/monster.svg"
+      },
+      {
+        "name": "Ogres",
+        "aliases": [
+          "Brutes"
+        ],
+        "count": 400,
+        "image": "./data/troops/images/monster.svg"
+      },
+      {
+        "name": "Wyrmlings",
+        "aliases": [
+          "Flying Monsters"
+        ],
+        "count": 180,
+        "image": "./data/troops/images/monster.svg"
+      }
+    ],
+    "notes": "Placeholder example \u2014 replace the counts and unit names with clan-tested values."
+  },
+  "M6": {
+    "label": "Monsters 6",
+    "units": [
+      {
+        "name": "Wolves",
+        "aliases": [
+          "Beasts"
+        ],
+        "count": 800,
+        "image": "./data/troops/images/monster.svg"
+      },
+      {
+        "name": "Ogres",
+        "aliases": [
+          "Brutes"
+        ],
+        "count": 550,
+        "image": "./data/troops/images/monster.svg"
+      },
+      {
+        "name": "Wyrmlings",
+        "aliases": [
+          "Flying Monsters"
+        ],
+        "count": 260,
+        "image": "./data/troops/images/monster.svg"
+      }
+    ],
+    "notes": "Placeholder example \u2014 replace the counts and unit names with clan-tested values."
+  },
+  "M7": {
+    "label": "Monsters 7",
+    "units": [
+      {
+        "name": "Wolves",
+        "aliases": [
+          "Beasts"
+        ],
+        "count": 1050,
+        "image": "./data/troops/images/monster.svg"
+      },
+      {
+        "name": "Ogres",
+        "aliases": [
+          "Brutes"
+        ],
+        "count": 750,
+        "image": "./data/troops/images/monster.svg"
+      },
+      {
+        "name": "Wyrmlings",
+        "aliases": [
+          "Flying Monsters"
+        ],
+        "count": 360,
+        "image": "./data/troops/images/monster.svg"
+      }
+    ],
+    "notes": "Placeholder example \u2014 replace the counts and unit names with clan-tested values."
+  },
+  "M8": {
+    "label": "Monsters 8",
+    "units": [
+      {
+        "name": "Wolves",
+        "aliases": [
+          "Beasts"
+        ],
+        "count": 1350,
+        "image": "./data/troops/images/monster.svg"
+      },
+      {
+        "name": "Ogres",
+        "aliases": [
+          "Brutes"
+        ],
+        "count": 1000,
+        "image": "./data/troops/images/monster.svg"
+      },
+      {
+        "name": "Wyrmlings",
+        "aliases": [
+          "Flying Monsters"
+        ],
+        "count": 500,
+        "image": "./data/troops/images/monster.svg"
+      }
+    ],
+    "notes": "Placeholder example \u2014 replace the counts and unit names with clan-tested values."
+  }
+}

@@ -1,0 +1,99 @@
+[
+  {
+    "id": "epic",
+    "label": "Epic Monsters",
+    "description": "Build a reference march for an epic monster target.",
+    "engineering": false,
+    "default": {
+      "G": "5",
+      "S": "3",
+      "M": "5",
+      "E": "4"
+    }
+  },
+  {
+    "id": "common",
+    "label": "Common Monsters",
+    "description": "Select the troop levels used for a common monster example.",
+    "engineering": false,
+    "default": {
+      "G": "5",
+      "S": "3",
+      "M": "5",
+      "E": "4"
+    }
+  },
+  {
+    "id": "rare",
+    "label": "Rare Monsters",
+    "description": "Select the troop levels used for a rare monster example.",
+    "engineering": false,
+    "default": {
+      "G": "6",
+      "S": "4",
+      "M": "6",
+      "E": "4"
+    }
+  },
+  {
+    "id": "towers",
+    "label": "Ancient Towers",
+    "description": "Use the selectors as a starting point for tower examples.",
+    "engineering": false,
+    "default": {
+      "G": "6",
+      "S": "4",
+      "M": "6",
+      "E": "4"
+    }
+  },
+  {
+    "id": "heroics",
+    "label": "Heroics",
+    "description": "Reference march levels for heroic targets.",
+    "engineering": false,
+    "default": {
+      "G": "6",
+      "S": "4",
+      "M": "6",
+      "E": "4"
+    }
+  },
+  {
+    "id": "runics",
+    "label": "Runics",
+    "description": "Reference march levels for runic targets.",
+    "engineering": false,
+    "default": {
+      "G": "6",
+      "S": "4",
+      "M": "6",
+      "E": "4"
+    }
+  },
+  {
+    "id": "citadels",
+    "label": "Citadels",
+    "description": "Engineering Corps is included for citadel examples.",
+    "engineering": true,
+    "default": {
+      "G": "6",
+      "S": "4",
+      "M": "6",
+      "E": "4"
+    }
+  },
+  {
+    "id": "pvp",
+    "label": "PvP",
+    "description": "Estimate the enemy player\u2019s troop levels to assemble a counter-reference.",
+    "engineering": true,
+    "pvp": true,
+    "default": {
+      "G": "6",
+      "S": "5",
+      "M": "5",
+      "E": "4"
+    }
+  }
+]

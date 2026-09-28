@@ -1,0 +1,192 @@
+{
+  "1": {
+    "stage": "Stage 1",
+    "epicTarget": "Chimera",
+    "levels": {
+      "1": {
+        "level": "G1 / S1 / M1 / E1",
+        "maxPoints": "TBD"
+      },
+      "2": {
+        "level": "G2 / S2 / M2 / E2",
+        "maxPoints": "TBD"
+      },
+      "3": {
+        "level": "G3 / S3 / M3 / E3",
+        "maxPoints": "TBD"
+      },
+      "4": {
+        "level": "G4 / S4 / M4 / E4",
+        "maxPoints": "TBD"
+      },
+      "5": {
+        "level": "G5 / S5 / M5 / E5",
+        "maxPoints": "TBD"
+      },
+      "6": {
+        "level": "G6 / S6 / M6 / E6",
+        "maxPoints": "TBD"
+      },
+      "7": {
+        "level": "G7 / S7 / M7 / E7",
+        "maxPoints": "TBD"
+      },
+      "8": {
+        "level": "G8 / S8 / M8 / E8",
+        "maxPoints": "TBD"
+      }
+    }
+  },
+  "2": {
+    "stage": "Stage 2",
+    "epicTarget": "Basilisk",
+    "levels": {
+      "1": {
+        "level": "G1 / S1 / M1 / E1",
+        "maxPoints": "TBD"
+      },
+      "2": {
+        "level": "G2 / S2 / M2 / E2",
+        "maxPoints": "TBD"
+      },
+      "3": {
+        "level": "G3 / S3 / M3 / E3",
+        "maxPoints": "TBD"
+      },
+      "4": {
+        "level": "G4 / S4 / M4 / E4",
+        "maxPoints": "TBD"
+      },
+      "5": {
+        "level": "G5 / S5 / M5 / E5",
+        "maxPoints": "TBD"
+      },
+      "6": {
+        "level": "G6 / S6 / M6 / E6",
+        "maxPoints": "TBD"
+      },
+      "7": {
+        "level": "G7 / S7 / M7 / E7",
+        "maxPoints": "TBD"
+      },
+      "8": {
+        "level": "G8 / S8 / M8 / E8",
+        "maxPoints": "TBD"
+      }
+    }
+  },
+  "3": {
+    "stage": "Stage 3",
+    "epicTarget": "Lava Fountains",
+    "levels": {
+      "1": {
+        "level": "G1 / S1 / M1 / E1",
+        "maxPoints": "TBD"
+      },
+      "2": {
+        "level": "G2 / S2 / M2 / E2",
+        "maxPoints": "TBD"
+      },
+      "3": {
+        "level": "G3 / S3 / M3 / E3",
+        "maxPoints": "TBD"
+      },
+      "4": {
+        "level": "G4 / S4 / M4 / E4",
+        "maxPoints": "TBD"
+      },
+      "5": {
+        "level": "G5 / S5 / M5 / E5",
+        "maxPoints": "TBD"
+      },
+      "6": {
+        "level": "G6 / S6 / M6 / E6",
+        "maxPoints": "TBD"
+      },
+      "7": {
+        "level": "G7 / S7 / M7 / E7",
+        "maxPoints": "TBD"
+      },
+      "8": {
+        "level": "G8 / S8 / M8 / E8",
+        "maxPoints": "TBD"
+      }
+    }
+  },
+  "4": {
+    "stage": "Stage 4",
+    "epicTarget": "Salamander",
+    "levels": {
+      "1": {
+        "level": "G1 / S1 / M1 / E1",
+        "maxPoints": "TBD"
+      },
+      "2": {
+        "level": "G2 / S2 / M2 / E2",
+        "maxPoints": "TBD"
+      },
+      "3": {
+        "level": "G3 / S3 / M3 / E3",
+        "maxPoints": "TBD"
+      },
+      "4": {
+        "level": "G4 / S4 / M4 / E4",
+        "maxPoints": "TBD"
+      },
+      "5": {
+        "level": "G5 / S5 / M5 / E5",
+        "maxPoints": "TBD"
+      },
+      "6": {
+        "level": "G6 / S6 / M6 / E6",
+        "maxPoints": "TBD"
+      },
+      "7": {
+        "level": "G7 / S7 / M7 / E7",
+        "maxPoints": "TBD"
+      },
+      "8": {
+        "level": "G8 / S8 / M8 / E8",
+        "maxPoints": "TBD"
+      }
+    }
+  },
+  "5": {
+    "stage": "Stage 5",
+    "epicTarget": "Briareu",
+    "levels": {
+      "1": {
+        "level": "G1 / S1 / M1 / E1",
+        "maxPoints": "TBD"
+      },
+      "2": {
+        "level": "G2 / S2 / M2 / E2",
+        "maxPoints": "TBD"
+      },
+      "3": {
+        "level": "G3 / S3 / M3 / E3",
+        "maxPoints": "TBD"
+      },
+      "4": {
+        "level": "G4 / S4 / M4 / E4",
+        "maxPoints": "TBD"
+      },
+      "5": {
+        "level": "G5 / S5 / M5 / E5",
+        "maxPoints": "TBD"
+      },
+      "6": {
+        "level": "G6 / S6 / M6 / E6",
+        "maxPoints": "TBD"
+      },
+      "7": {
+        "level": "G7 / S7 / M7 / E7",
+        "maxPoints": "TBD"
+      },
+      "8": {
+        "level": "G8 / S8 / M8 / E8",
+        "maxPoints": "TBD"
+      }
+    }
+  }
+}
