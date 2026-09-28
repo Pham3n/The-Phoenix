@@ -1,0 +1,192 @@
+{
+  "G4": {
+    "label": "Guardsmen 4",
+    "units": [
+      {
+        "name": "Spearmen",
+        "aliases": [
+          "Melee"
+        ],
+        "count": 500,
+        "image": "./data/troops/images/guardsmen.svg"
+      },
+      {
+        "name": "Archers",
+        "aliases": [
+          "Ranged"
+        ],
+        "count": 500,
+        "image": "./data/troops/images/guardsmen.svg"
+      },
+      {
+        "name": "Riders",
+        "aliases": [
+          "Mounted"
+        ],
+        "count": 300,
+        "image": "./data/troops/images/guardsmen.svg"
+      },
+      {
+        "name": "Birds",
+        "aliases": [
+          "Flying Units"
+        ],
+        "count": 100,
+        "image": "./data/troops/images/guardsmen.svg"
+      }
+    ],
+    "notes": "Placeholder example \u2014 replace the counts and unit names with clan-tested values."
+  },
+  "G5": {
+    "label": "Guardsmen 5",
+    "units": [
+      {
+        "name": "Spearmen",
+        "aliases": [
+          "Melee"
+        ],
+        "count": 700,
+        "image": "./data/troops/images/guardsmen.svg"
+      },
+      {
+        "name": "Archers",
+        "aliases": [
+          "Ranged"
+        ],
+        "count": 700,
+        "image": "./data/troops/images/guardsmen.svg"
+      },
+      {
+        "name": "Riders",
+        "aliases": [
+          "Mounted"
+        ],
+        "count": 500,
+        "image": "./data/troops/images/guardsmen.svg"
+      },
+      {
+        "name": "Birds",
+        "aliases": [
+          "Flying Units"
+        ],
+        "count": 200,
+        "image": "./data/troops/images/guardsmen.svg"
+      }
+    ],
+    "notes": "Placeholder example \u2014 replace the counts and unit names with clan-tested values."
+  },
+  "G6": {
+    "label": "Guardsmen 6",
+    "units": [
+      {
+        "name": "Spearmen",
+        "aliases": [
+          "Melee"
+        ],
+        "count": 900,
+        "image": "./data/troops/images/guardsmen.svg"
+      },
+      {
+        "name": "Archers",
+        "aliases": [
+          "Ranged"
+        ],
+        "count": 900,
+        "image": "./data/troops/images/guardsmen.svg"
+      },
+      {
+        "name": "Riders",
+        "aliases": [
+          "Mounted"
+        ],
+        "count": 700,
+        "image": "./data/troops/images/guardsmen.svg"
+      },
+      {
+        "name": "Birds",
+        "aliases": [
+          "Flying Units"
+        ],
+        "count": 300,
+        "image": "./data/troops/images/guardsmen.svg"
+      }
+    ],
+    "notes": "Placeholder example \u2014 replace the counts and unit names with clan-tested values."
+  },
+  "G7": {
+    "label": "Guardsmen 7",
+    "units": [
+      {
+        "name": "Spearmen",
+        "aliases": [
+          "Melee"
+        ],
+        "count": 1200,
+        "image": "./data/troops/images/guardsmen.svg"
+      },
+      {
+        "name": "Archers",
+        "aliases": [
+          "Ranged"
+        ],
+        "count": 1200,
+        "image": "./data/troops/images/guardsmen.svg"
+      },
+      {
+        "name": "Riders",
+        "aliases": [
+          "Mounted"
+        ],
+        "count": 900,
+        "image": "./data/troops/images/guardsmen.svg"
+      },
+      {
+        "name": "Birds",
+        "aliases": [
+          "Flying Units"
+        ],
+        "count": 400,
+        "image": "./data/troops/images/guardsmen.svg"
+      }
+    ],
+    "notes": "Placeholder example \u2014 replace the counts and unit names with clan-tested values."
+  },
+  "G8": {
+    "label": "Guardsmen 8",
+    "units": [
+      {
+        "name": "Spearmen",
+        "aliases": [
+          "Melee"
+        ],
+        "count": 1500,
+        "image": "./data/troops/images/guardsmen.svg"
+      },
+      {
+        "name": "Archers",
+        "aliases": [
+          "Ranged"
+        ],
+        "count": 1500,
+        "image": "./data/troops/images/guardsmen.svg"
+      },
+      {
+        "name": "Riders",
+        "aliases": [
+          "Mounted"
+        ],
+        "count": 1200,
+        "image": "./data/troops/images/guardsmen.svg"
+      },
+      {
+        "name": "Birds",
+        "aliases": [
+          "Flying Units"
+        ],
+        "count": 600,
+        "image": "./data/troops/images/guardsmen.svg"
+      }
+    ],
+    "notes": "Placeholder example \u2014 replace the counts and unit names with clan-tested values."
+  }
+}
