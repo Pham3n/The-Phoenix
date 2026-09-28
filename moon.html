@@ -30,6 +30,16 @@
         <a href="#calendar"><span class="nav-dot"></span>Calendar watch</a>
         <a href="#checklist"><span class="nav-dot"></span>Daily readiness</a>
         <a href="#troops"><span class="nav-dot"></span>Troop examples</a>
+        <div class="nav-clocks" aria-label="Total Battle reset-time clocks">
+          <div class="r-clock" data-r-clock="0">
+            <div class="r-clock-label"><span>R → R+11</span><small>17:00–04:59 UTC</small></div>
+            <div class="clock-face" aria-hidden="true"><span class="clock-hand hour-hand"></span><span class="clock-hand minute-hand"></span><span class="clock-center"></span></div>
+          </div>
+          <div class="r-clock" data-r-clock="1">
+            <div class="r-clock-label"><span>R+12 → R-1</span><small>05:00–16:59 UTC</small></div>
+            <div class="clock-face" aria-hidden="true"><span class="clock-hand hour-hand"></span><span class="clock-hand minute-hand"></span><span class="clock-center"></span></div>
+          </div>
+        </div>
       </nav>
 
       <div class="content-stack">
@@ -53,27 +63,7 @@
             <div class="calendar-frame">
               <div id="event-calendar" aria-label="Total Battle event calendar"></div>
             </div>
-            <!-- <aside class="calendar-note">
-                <div><span class="eyebrow">Reset convention</span><h3>One clock. Every realm.</h3><p><strong>R</strong> is 17:00 UTC. Through 12 hours after reset, the clock reads <strong>R+1</strong> to <strong>R+12</strong>; after that it counts down as <strong>R-11</strong> to <strong>R-1</strong>.</p></div>
-                <div class="key"><span class="key-item"><i class="key-swatch"></i>Olympus / standard events</span><span class="key-item"><i class="key-swatch violet"></i>Ragnarök</span><span class="key-item"><i class="key-swatch crimson"></i>Dark Omens</span><span class="key-item"><i class="key-swatch silver"></i>Tinman (reserved)</span></div>
-              </aside> -->
-            <div class="clock-note-heading">
-
-            </div>
-            <div class="r-clocks" aria-label="Total Battle reset-time clocks">
-              <div class="r-clock" data-r-clock="0">
-                <div class="r-clock-label"><span>R1</span><small> </small></div>
-                <div class="clock-face" aria-hidden="true"><span class="clock-hand hour-hand"></span><span
-                    class="clock-hand minute-hand"></span><span class="clock-center"></span></div>
-              </div>
-              <div class="r-clock" data-r-clock="1">
-                <div class="r-clock-label"><span>R2</span><small> </small></div>
-                <div class="clock-face" aria-hidden="true"><span class="clock-hand hour-hand"></span><span
-                    class="clock-hand minute-hand"></span><span class="clock-center"></span></div>
-              </div>
-            </div>
-            <!-- <aside> <div> <span>Reset convention</span> <h3>24h Realm Clocks</h3> <p><strong>R</strong> is 17:00 UTC [cite: 14]. Position <strong>5</strong> on the clock face represents reset [cite: 12, 14], with subsequent hours incrementing through the 24-hour cycle [cite: 12, 14].</p> </div> <div>  <div> <span>Clock 1 · 17:00 – 05:00 UTC</span> <div>  </div> </div>  <div> <span>Clock 2 · 05:00 – 17:00 UTC</span> <div>  </div> </div> </div> <div> <span><i></i>Olympus / standard events</span> <span><i></i>Ragnarök</span> <span><i></i>Dark Omens</span> <span><i></i>Tinman (reserved)</span> </div> </aside>
-            </div> -->
+          </div>
         </section>
 
         <section class="section-card" id="checklist">
@@ -88,16 +78,12 @@
           </div>
         </section>
 
-        <section class="section-card coming-soon-card" id="troops">
+        <section class="section-card troop-calculator-card" id="troops">
           <div class="section-heading">
-            <div><span class="eyebrow">Field library</span>
-            </div>
-            <p>Detailed troop formations are being checked and prepared for a future update.</p>
+            <div><span class="eyebrow">04 · Editable battle reference</span><h2>Troop examples</h2></div>
+            <p>Select troop levels to assemble the matching reference composition. Engineering Corps data for Citadel and PvP examples is not available yet.</p>
           </div>
-          <div class="coming-soon-panel"><span class="coming-soon-mark">◌</span>
-            <div><strong>Coming soon</strong><span>The troop reference will return here once the clan’s examples are
-                ready.</span></div>
-          </div>
+          <div id="troop-library"><div class="empty-state">Loading troop examples…</div></div>
         </section>
       </div>
     </div>

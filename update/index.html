@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
     <meta name="theme-color" content="#07111f" />
-    <title>PNX Moon — Clan Hub</title>
+    <title>Moonwatch — Clan Command</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet" />
@@ -22,8 +22,7 @@
       a { color:inherit; text-decoration:none; }
       .site-header { position:sticky; top:0; z-index:30; min-height:78px; display:flex; align-items:center; gap:24px; padding:12px clamp(18px,4vw,64px); border-bottom:1px solid var(--line); background:rgba(7,17,31,.86); backdrop-filter:blur(18px); }
       .brand { display:flex; align-items:center; gap:11px; min-width:max-content; }
-      .brand-mark { width:42px; height:42px; display:grid; place-items:center; border:1px /*solid rgba(217,184,101,.55); border-radius:13px 13px 13px 3px; background:linear-gradient(145deg,rgba(217,184,101,.22),rgba(255,255,255,.02)); color:var(--gold-pale); font-family:"Playfair Display",serif; font-size:25px; box-shadow:inset 0 0 18px rgba(255,238,173,.08);*/ }
-      .brand-mark img {display:block;width:100%;height:100%;object-fit:contain;padding:6px}
+      .brand-mark { width:42px; height:42px; display:grid; place-items:center; border:1px solid rgba(217,184,101,.55); border-radius:13px 13px 13px 3px; background:linear-gradient(145deg,rgba(217,184,101,.22),rgba(255,255,255,.02)); color:var(--gold-pale); font-family:"Playfair Display",serif; font-size:25px; box-shadow:inset 0 0 18px rgba(255,238,173,.08); }
       .brand-kicker,.eyebrow { display:block; margin-bottom:2px; color:var(--gold); font:500 10px/1.2 "DM Mono",monospace; letter-spacing:.16em; text-transform:uppercase; }
       .brand-name { display:block; font:700 17px/1 "Playfair Display",serif; letter-spacing:.01em; }
       .header-divider { width:1px; align-self:stretch; min-height:30px; background:var(--line); }
@@ -40,13 +39,10 @@
       #site-body { min-height:calc(100vh - 78px); }
       .page-shell { width:min(1440px,100%); margin:0 auto; padding:34px clamp(18px,4vw,64px) 64px; animation:arrive .38s var(--ease); }
       .hero { position:relative; min-height:345px; overflow:hidden; display:flex; align-items:flex-end; padding:clamp(28px,5vw,64px); border:1px solid var(--line); border-radius:28px; background:#0b1a2b; box-shadow:0 24px 80px rgba(0,0,0,.26); }
-      .hero::after { content:""; position:absolute; inset:0; background:linear-gradient(90deg,rgba(7,17,31,.88) 0%,rgba(7,17,31,.68) 48%,rgba(7,17,31,.15) 100%),linear-gradient(0deg,rgba(7,17,31,.74) 0%,transparent 70%); }
+      .hero::after { content:""; position:absolute; inset:0; background:linear-gradient(90deg,rgba(7,17,31,.88) 0%,rgba(7,17,31,.68) 48%,rgba(7,17,31,.15) 100%),linear-gradient(0deg,rgba(7,17,31,.74) 0%,transparent 58%); }
       .hero-art { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center; opacity:.93; }
       .hero-content { position:relative; z-index:1; max-width:700px; }
       .hero .eyebrow { color:var(--gold-pale); }
-      .hero-placeholder img{
-        display: block;width: 100%;height: 100%;object-fit: contain;
-      }
       h1,h2,h3,p { margin-top:0; }
       h1 { max-width:680px; margin-bottom:16px; font:600 clamp(40px,6.2vw,82px)/.96 "Playfair Display",serif; letter-spacing:-.04em; text-wrap:balance; }
       .hero-subtitle { max-width:580px; margin-bottom:25px; color:#d4e2f6; font-size:15px; line-height:1.7; }
@@ -56,16 +52,16 @@
       .button.ghost { border-color:var(--line); background:rgba(7,17,31,.42); color:#e5effe; }
       .command-grid { display:grid; grid-template-columns:240px minmax(0,1fr); gap:22px; margin-top:22px; }
       .section-nav { position:sticky; top:102px; align-self:start; padding:15px; border:1px solid var(--line); border-radius:var(--radius); background:rgba(16,34,56,.58); backdrop-filter:blur(10px); }
-      .section-nav-title { margin:1px 0 12px; color:var(--muted); font:500 10px/1.2 "DM Mono",monospace; letter-spacing:.13em; text-transform:uppercase; }
-      .section-nav a { display:flex; align-items:center; gap:10px; padding:10px 9px; border-radius:9px; color:#c8d5e9; font-size:12px; transition:background .16s var(--ease),color .16s var(--ease),transform .16s var(--ease); }
-      .section-nav a:hover { background:rgba(169,201,255,.09); color:#fff; transform:translateX(2px); }
-      .nav-dot { width:5px; height:5px; border-radius:50%; background:var(--gold); box-shadow:0 0 8px rgba(217,184,101,.8); }
       .nav-clocks { display:flex; flex-direction:column; gap:12px; margin-top:15px; padding-top:12px; border-top:1px solid var(--line); }
       .nav-clocks .r-clock { grid-template-columns:1fr; gap:7px; padding:0; border:0; background:transparent; box-shadow:none; }
       .nav-clocks .r-clock.is-active { border:0; background:transparent; }
       .nav-clocks .r-clock-label span { font-size:10px; }
       .nav-clocks .r-clock-label small { font-size:8px; }
       .nav-clocks .clock-face { width:112px; height:112px; margin:0 auto; }
+      .section-nav-title { margin:1px 0 12px; color:var(--muted); font:500 10px/1.2 "DM Mono",monospace; letter-spacing:.13em; text-transform:uppercase; }
+      .section-nav a { display:flex; align-items:center; gap:10px; padding:10px 9px; border-radius:9px; color:#c8d5e9; font-size:12px; transition:background .16s var(--ease),color .16s var(--ease),transform .16s var(--ease); }
+      .section-nav a:hover { background:rgba(169,201,255,.09); color:#fff; transform:translateX(2px); }
+      .nav-dot { width:5px; height:5px; border-radius:50%; background:var(--gold); box-shadow:0 0 8px rgba(217,184,101,.8); }
       .content-stack { display:grid; gap:22px; min-width:0; }
       .section-card { scroll-margin-top:105px; padding:clamp(20px,3vw,31px); border:1px solid var(--line); border-radius:var(--radius); background:linear-gradient(145deg,rgba(19,42,69,.8),rgba(10,24,42,.82)); box-shadow:0 16px 40px rgba(0,0,0,.12); }
       .section-heading { display:flex; align-items:flex-end; justify-content:space-between; gap:18px; margin-bottom:20px; }
@@ -85,63 +81,10 @@
       .tab-brief { margin-bottom:18px; color:#bdcce1; font-size:13px; line-height:1.7; }
       .signal-list { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:8px; margin:0 0 16px; padding:0; list-style:none; }
       .signal-list li { padding:10px; border:1px solid rgba(169,201,255,.11); border-radius:8px; background:rgba(169,201,255,.035); color:#d5e0ee; font-size:11px; line-height:1.45; }
+      .signal-list li::before { content:"↳"; display:block; margin-bottom:4px; color:var(--gold); }
       .guide-callout { padding:9px 11px; border-left:2px solid var(--gold); background:rgba(217,184,101,.07); color:#c9d7ea; font-size:11px; }
-      .guide-panel-shell { position:relative; overflow:hidden; min-height:300px; border-radius:12px; background:rgba(4,13,25,.28); }
-      .guide-panel-shell::before { content:""; position:absolute; inset:0; background-image:var(--guide-bg); background-size:cover; background-position:center; opacity:.2; filter:saturate(.85); }
-      .guide-panel-content { position:relative; z-index:1; padding:22px; background:linear-gradient(90deg,rgba(4,13,25,.94),rgba(4,13,25,.72) 60%,rgba(4,13,25,.45)); }
-      .guide-date { display:block; margin-top:6px; color:var(--muted); font:500 10px/1 "DM Mono",monospace; }
-      .guide-sections { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; margin-top:18px; }
-      .guide-detail { padding:13px; border:1px solid rgba(169,201,255,.13); border-radius:10px; background:rgba(4,13,25,.34); }
-      .guide-detail h4 { margin:0 0 9px; color:var(--gold-pale); font:600 11px/1 "DM Mono",monospace; letter-spacing:.08em; text-transform:uppercase; }
-      .bonus-list,.window-list { display:flex; flex-wrap:wrap; gap:6px; margin:0; padding:0; list-style:none; }
-      .bonus-list li,.window-list li { padding:6px 8px; border:1px solid rgba(169,201,255,.16); border-radius:999px; color:var(--text); font-size:10px; }
-      .window-list li { color:var(--crimson); border-color:rgba(239,82,96,.35); font:600 11px "DM Mono",monospace; }
-      .guide-defence { grid-column:1/-1; border-left:2px solid var(--crimson); color:#f0c8ce; font-size:11px; line-height:1.5; }
-      .guide-trials { margin-top:18px; }
-      .current-stage-note { display:block; margin:-4px 0 10px; color:var(--mint); font:500 9px/1 "DM Mono",monospace; letter-spacing:.05em; text-transform:uppercase; }
-      .trial-buttons { display:flex; flex-wrap:wrap; gap:7px; }
-      .trial-button,.monster-choice { padding:7px 9px; border:1px solid rgba(169,201,255,.18); border-radius:7px; background:rgba(169,201,255,.05); color:var(--muted); font:600 10px/1 "DM Mono",monospace; cursor:pointer; }
-      .trial-button:hover,.trial-button.active,.monster-choice:hover,.monster-choice.active { border-color:var(--gold); color:var(--gold-pale); background:rgba(217,184,101,.12); }
-      .trial-button.is-current { box-shadow:0 0 0 2px rgba(142,227,192,.18); }
-      .monster-choice { margin-right:6px; }
-      .epic-button { display:inline-flex; align-items:center; gap:7px; margin-top:13px; padding:9px 11px; border:1px solid rgba(239,82,96,.45); border-radius:7px; background:rgba(239,82,96,.09); color:#ffd7dc; font:600 10px/1 "DM Mono",monospace; letter-spacing:.06em; text-transform:uppercase; cursor:pointer; }
-      .window-list li.dark-omens-timing-cue { color:#ff6b78; text-shadow:0 0 10px rgba(239,82,96,.28); font-weight:700; }
-      .points-table { width:100%; border-collapse:collapse; color:var(--muted); font-size:10px; }
-      .points-table th,.points-table td { padding:7px 5px; border-bottom:1px solid rgba(169,201,255,.11); text-align:left; }
-      .points-table th { color:var(--gold-pale); font:600 9px "DM Mono",monospace; letter-spacing:.08em; text-transform:uppercase; }
-      .points-table td:last-child { color:var(--text); font:600 11px "DM Mono",monospace; text-align:right; }
-      .troop-categories { display:grid; gap:12px; }
-      .troop-category { overflow:hidden; border:1px solid var(--line); border-radius:14px; background:rgba(9,20,35,.34); }
-      .troop-category > summary { display:flex; align-items:center; justify-content:space-between; gap:12px; padding:16px 18px; cursor:pointer; list-style:none; }
-      .troop-category > summary::-webkit-details-marker { display:none; }
-      .troop-category > summary::after { content:"＋"; color:var(--gold-pale); font-size:18px; }
-      .troop-category[open] > summary::after { content:"−"; }
-      .troop-category-title strong,.troop-category-title span { display:block; }
-      .troop-category-title strong { color:var(--text); font:600 16px/1.2 "Playfair Display",serif; }
-      .troop-category-title span { margin-top:5px; color:var(--muted); font-size:11px; line-height:1.45; }
-      .troop-calculator { padding:0 18px 18px; }
-      .troop-selectors { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:10px; padding:14px; border:1px solid var(--line); border-radius:12px; background:rgba(255,255,255,.025); }
-      .troop-selector { display:grid; gap:6px; }
-      .troop-selector label { color:var(--muted); font:600 10px/1 "DM Mono",monospace; letter-spacing:.12em; text-transform:uppercase; }
-      .troop-selector select { width:100%; padding:9px 10px; border:1px solid var(--line); border-radius:8px; background:var(--panel-2); color:var(--text); font:600 12px "DM Mono",monospace; }
-      .troop-selector select:disabled { opacity:.38; cursor:not-allowed; }
-      .troop-result-head { display:flex; justify-content:space-between; align-items:center; gap:12px; margin:16px 0 10px; }
-      .troop-result-head strong { color:var(--gold-pale); font:600 15px/1.2 "Playfair Display",serif; }
-      .troop-code { color:var(--muted); font:11px "DM Mono",monospace; }
-      .troop-units { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:10px; }
-      .troop-unit { display:grid; grid-template-columns:48px 1fr; gap:10px; align-items:center; padding:10px; border:1px solid var(--line); border-radius:10px; background:rgba(255,255,255,.025); }
-      .troop-unit img { width:48px; height:38px; object-fit:cover; border-radius:7px; }
-      .troop-unit strong,.troop-unit span { display:block; }
-      .troop-unit strong { color:var(--text); font-size:12px; }
-      .troop-unit span { margin-top:3px; color:var(--muted); font-size:10px; line-height:1.35; }
-      .troop-unit .troop-count { color:var(--gold-pale); font:700 12px "DM Mono",monospace; }
-      .troop-notes { margin-top:12px; color:var(--muted); font-size:10px; line-height:1.5; }
-      .calendar-layout { display:box; grid-template-columns:minmax(0,1fr) 230px; gap:17px; align-items:start; }
-      .fc-event-time {display: none;}
+      .calendar-layout { display:grid; grid-template-columns:minmax(0,1fr) 230px; gap:17px; align-items:start; }
       .calendar-frame { min-width:0; padding:12px; border:1px solid var(--line); border-radius:14px; background:#091a2d; }
-      .calendar-note { padding:17px; border:1px solid rgba(217,184,101,.22); border-radius:14px; background:linear-gradient(145deg,rgba(217,184,101,.12),rgba(217,184,101,.03)); }
-      .calendar-note h3 { margin:5px 0 10px; color:var(--gold-pale); font:600 21px/1.1 "Playfair Display",serif; }
-      .calendar-note p { margin-bottom:13px; color:#c6d5e8; font-size:11px; line-height:1.65; }
       .r-clock-note { display:flex; flex-direction:column; gap:13px; }
       .clock-note-heading p { margin-bottom:0; }
       .r-clocks { display:flex; flex-direction:column; gap:12px; }
@@ -156,12 +99,62 @@
       .clock-hand { position:absolute; left:50%; bottom:50%; z-index:2; width:2px; transform-origin:50% 100%; border-radius:2px; background:var(--gold-pale); box-shadow:0 0 6px rgba(255,240,189,.55); transition:transform .35s linear; }
       .hour-hand { height:27px; }
       .minute-hand { z-index:1; width:1px; height:35px; background:var(--moon); opacity:.8; }
+      .r-clock:not(.is-active) .clock-hand { opacity:0; }
       .clock-center { position:absolute; left:50%; top:50%; z-index:3; width:7px; height:7px; transform:translate(-50%,-50%); border:1px solid var(--gold-pale); border-radius:50%; background:var(--gold); box-shadow:0 0 7px var(--gold); }
       .coming-soon-panel { display:flex; align-items:center; gap:14px; min-height:130px; padding:22px; border:1px dashed rgba(217,184,101,.3); border-radius:14px; background:linear-gradient(135deg,rgba(217,184,101,.08),rgba(255,255,255,.02)); }
       .coming-soon-mark { display:grid; place-items:center; width:48px; height:48px; border:1px solid rgba(217,184,101,.4); border-radius:50%; color:var(--gold-pale); font-size:25px; }
       .coming-soon-panel strong,.coming-soon-panel span { display:block; }
       .coming-soon-panel strong { color:var(--gold-pale); font:600 16px/1.2 "Playfair Display",serif; }
       .coming-soon-panel span:not(.coming-soon-mark) { margin-top:5px; color:var(--muted); font-size:11px; line-height:1.5; }
+      .troop-categories { display:grid; gap:12px; }
+      .troop-category { border:1px solid var(--line); border-radius:14px; background:rgba(9,20,35,.34); overflow:hidden; }
+      .troop-category > summary { display:flex; align-items:center; justify-content:space-between; gap:12px; padding:16px 18px; cursor:pointer; list-style:none; }
+      .troop-category > summary::-webkit-details-marker { display:none; }
+      .troop-category > summary::after { content:'＋'; color:var(--gold-pale); font-size:18px; }
+      .troop-category[open] > summary::after { content:'−'; }
+      .troop-category-title strong, .troop-category-title span { display:block; }
+      .troop-category-title strong { color:var(--text); font:600 16px/1.2 "Playfair Display",serif; }
+      .troop-category-title span { margin-top:5px; color:var(--muted); font-size:11px; line-height:1.45; }
+      .troop-calculator { padding:0 18px 18px; }
+      .troop-selectors { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:10px; padding:14px; border:1px solid var(--line); border-radius:12px; background:rgba(255,255,255,.025); }
+      .troop-selector { display:grid; gap:6px; }
+      .troop-selector label { color:var(--muted); font:600 10px/1 "DM Mono",monospace; letter-spacing:.12em; text-transform:uppercase; }
+      .troop-selector select { width:100%; padding:9px 10px; border:1px solid var(--line); border-radius:8px; background:var(--panel-2); color:var(--text); font:600 12px "DM Mono",monospace; }
+      .troop-selector select:disabled { opacity:.38; cursor:not-allowed; }
+      .troop-result-head { display:flex; justify-content:space-between; align-items:center; gap:12px; margin:16px 0 10px; }
+      .troop-result-head strong { color:var(--gold-pale); font:600 15px/1.2 "Playfair Display",serif; }
+      .troop-code { color:var(--muted); font:11px "DM Mono",monospace; }
+      .troop-units { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:10px; }
+      .troop-unit { display:grid; grid-template-columns:48px 1fr; gap:10px; align-items:center; padding:10px; border:1px solid var(--line); border-radius:10px; background:rgba(255,255,255,.025); }
+      .troop-unit img { width:48px; height:38px; object-fit:cover; border-radius:7px; }
+      .troop-unit strong, .troop-unit span { display:block; }
+      .troop-unit strong { color:var(--text); font-size:12px; }
+      .troop-unit span { margin-top:3px; color:var(--muted); font-size:10px; line-height:1.35; }
+      .troop-unit .troop-count { color:var(--gold-pale); font:700 12px "DM Mono",monospace; }
+      .troop-notes { margin-top:12px; color:var(--muted); font-size:10px; line-height:1.5; }
+      @media (max-width:640px) { .troop-selectors { grid-template-columns:repeat(2,minmax(0,1fr)); } .troop-result-head { display:block; } .troop-code { display:block; margin-top:6px; } }
+
+      .current-stage-note { display:block; margin:-4px 0 10px; color:var(--mint); font:500 9px/1 "DM Mono",monospace; letter-spacing:.05em; text-transform:uppercase; } .trial-button.is-current { box-shadow:0 0 0 2px rgba(142,227,192,.18); }
+      .monster-choice { display:inline-flex; margin-right:6px; padding:7px 9px; border:1px solid rgba(169,201,255,.18); border-radius:7px; background:rgba(169,201,255,.05); color:var(--muted); font:600 10px/1 "DM Mono",monospace; cursor:pointer; } .monster-choice:hover,.monster-choice.active { border-color:var(--gold); color:var(--gold-pale); background:rgba(217,184,101,.12); }
+      .guide-trials { margin-top:18px; } .trial-buttons { display:flex; flex-wrap:wrap; gap:7px; } .trial-button { padding:7px 9px; border:1px solid rgba(169,201,255,.18); border-radius:7px; background:rgba(169,201,255,.05); color:var(--muted); font:600 10px/1 "DM Mono",monospace; cursor:pointer; } .trial-button:hover,.trial-button.active { border-color:var(--gold); color:var(--gold-pale); background:rgba(217,184,101,.12); }
+      .guide-panel-shell { position:relative; overflow:hidden; min-height:300px; border-radius:12px; background:rgba(4,13,25,.28); }
+      .guide-panel-shell::before { content:""; position:absolute; inset:0; background-image:var(--guide-bg); background-size:cover; background-position:center; opacity:.2; filter:saturate(.85); }
+      .guide-panel-content { position:relative; z-index:1; padding:22px; background:linear-gradient(90deg,rgba(4,13,25,.94),rgba(4,13,25,.72) 60%,rgba(4,13,25,.45)); }
+      .guide-date { display:block; margin-top:6px; color:var(--muted); font:500 10px/1 "DM Mono",monospace; }
+      .guide-sections { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; margin-top:18px; }
+      .guide-detail { padding:13px; border:1px solid rgba(169,201,255,.13); border-radius:10px; background:rgba(4,13,25,.34); }
+      .guide-detail h4 { margin:0 0 9px; color:var(--gold-pale); font:600 11px/1 "DM Mono",monospace; letter-spacing:.08em; text-transform:uppercase; }
+      .bonus-list,.window-list { display:flex; flex-wrap:wrap; gap:6px; margin:0; padding:0; list-style:none; }
+      .bonus-list li,.window-list li { padding:6px 8px; border:1px solid rgba(169,201,255,.16); border-radius:999px; color:var(--text); font-size:10px; }
+      .window-list li { color:var(--crimson); border-color:rgba(239,82,96,.35); font:600 11px "DM Mono",monospace; }
+      .guide-defence { grid-column:1/-1; border-left:2px solid var(--crimson); color:#f0c8ce; font-size:11px; line-height:1.5; }
+      .epic-button { display:inline-flex; align-items:center; gap:7px; margin-top:13px; padding:9px 11px; border:1px solid rgba(239,82,96,.45); border-radius:7px; background:rgba(239,82,96,.09); color:#ffd7dc; font:600 10px/1 "DM Mono",monospace; letter-spacing:.06em; text-transform:uppercase; cursor:pointer; }
+      .window-list li.dark-omens-timing-cue { color:#ff6b78; text-shadow:0 0 10px rgba(239,82,96,.28); font-weight:700; }
+      .points-table { width:100%; border-collapse:collapse; color:var(--muted); font-size:10px; }
+      .points-table th,.points-table td { padding:7px 5px; border-bottom:1px solid rgba(169,201,255,.11); text-align:left; }
+      .points-table th { color:var(--gold-pale); font:600 9px "DM Mono",monospace; letter-spacing:.08em; text-transform:uppercase; }
+      .points-table td:last-child { color:var(--text); font:600 11px "DM Mono",monospace; text-align:right; }
+      @media (max-width:760px) { .guide-sections { grid-template-columns:1fr; } .guide-defence { grid-column:auto; } }
       .key { display:grid; gap:8px; }
       .key-item { display:flex; align-items:center; gap:8px; color:var(--muted); font-size:10px; }
       .key-swatch { width:9px; height:9px; border-radius:50%; background:var(--gold); box-shadow:0 0 9px currentColor; }
@@ -209,7 +202,9 @@
       .sun-hero-content { position:relative; z-index:2; max-width:680px; }.sun-hero .eyebrow { color:#9b6d1e; }.sun-hero h1 { color:#263846; }.sun-hero .hero-subtitle { color:#5d6c76; }.sun-button { border-color:rgba(175,124,37,.55); background:linear-gradient(135deg,rgba(175,124,37,.18),rgba(175,124,37,.05)); color:#70480c; }.sun-button.ghost { border-color:rgba(57,65,74,.2); background:rgba(255,255,255,.36); color:#3c5968; }.sun-disc { position:absolute; z-index:1; right:9%; top:17%; display:grid; place-items:center; width:180px; height:180px; border-radius:50%; color:#fff9e6; font-size:74px; background:radial-gradient(circle at 36% 30%,#fff5ba,#f2c85f 52%,#c27e23 100%); box-shadow:0 0 0 22px rgba(242,200,95,.12),0 0 90px rgba(242,200,95,.45); }.sun-disc span { transform:translateY(-2px); }.sun-orbit { position:absolute; z-index:1; border:1px solid rgba(175,124,37,.23); border-radius:50%; transform:rotate(-18deg); }.orbit-one { width:480px; height:200px; right:-30px; top:80px; }.orbit-two { width:620px; height:270px; right:-80px; top:30px; border-color:rgba(47,110,147,.14); }.sun-hero-stats { position:absolute; z-index:2; right:40px; bottom:26px; display:flex; gap:10px; }.sun-hero-stats > div { padding:9px 11px; border:1px solid rgba(175,124,37,.19); border-radius:9px; background:rgba(255,255,255,.38); }.sun-hero-stats strong { color:#516575; font-size:10px; }.daywatch-grid { display:grid; grid-template-columns:240px minmax(0,1fr); gap:22px; margin-top:22px; }.day-rail { position:sticky; top:102px; align-self:start; display:grid; gap:8px; padding:17px; border:1px solid var(--line); border-radius:var(--radius); background:rgba(255,253,247,.72); box-shadow:0 12px 26px rgba(88,68,35,.06); }.day-rail a { display:flex; align-items:center; gap:11px; padding:10px 9px; border-radius:8px; color:#556673; font-size:12px; transition:background .18s var(--ease),transform .18s var(--ease); }.day-rail a:hover { background:rgba(175,124,37,.1); transform:translateX(2px); }.day-rail a span { color:#af7c25; font:500 10px/1 "DM Mono",monospace; }.day-rail-note { margin-top:10px; padding:13px; border-top:1px solid var(--line); }.sun-mini { display:grid; place-items:center; width:28px; height:28px; margin-bottom:9px; border-radius:50%; color:#fff8dc; background:#d6a83e; }.day-rail-note strong { display:block; color:#3b4f5d; font-size:12px; }.day-rail-note p { margin:5px 0 0; color:var(--muted); font-size:10px; line-height:1.5; }.day-content-stack { display:grid; gap:22px; min-width:0; }.day-card { scroll-margin-top:105px; padding:clamp(20px,3vw,31px); border:1px solid var(--line); border-radius:var(--radius); background:rgba(255,253,247,.8); box-shadow:0 16px 40px rgba(88,68,35,.06); }.day-heading { display:flex; align-items:flex-end; justify-content:space-between; gap:18px; margin-bottom:21px; }.day-heading h2 { margin:0; font:600 clamp(26px,3vw,36px)/1 "Playfair Display",serif; letter-spacing:-.03em; }.day-heading p { max-width:410px; margin:0; color:var(--muted); font-size:12px; line-height:1.6; }.day-badge { padding:7px 9px; border:1px solid rgba(44,138,112,.23); border-radius:999px; color:#2c8a70; font:500 9px/1 "DM Mono",monospace; letter-spacing:.08em; text-transform:uppercase; white-space:nowrap; }.day-plan-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:11px; }.day-plan-card { min-height:190px; padding:18px; border:1px solid rgba(57,65,74,.13); border-radius:12px; background:rgba(255,255,255,.58); }.day-plan-card.featured { border-color:rgba(175,124,37,.32); background:linear-gradient(145deg,rgba(255,248,222,.9),rgba(255,255,255,.56)); }.plan-number { display:block; margin-bottom:28px; color:#af7c25; font:500 10px/1 "DM Mono",monospace; }.day-plan-card h3 { margin:0 0 8px; color:#314652; font:600 19px/1.1 "Playfair Display",serif; }.day-plan-card p { min-height:54px; margin:0 0 18px; color:#6d7c85; font-size:11px; line-height:1.55; }.day-plan-card a,.plan-status { color:#a16f1b; font:600 10px/1 "DM Mono",monospace; letter-spacing:.05em; text-transform:uppercase; }.plan-status { color:#2c8a70; }.rhythm-track { position:relative; display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }.rhythm-track::before { content:""; position:absolute; top:16px; left:9%; right:9%; height:1px; background:rgba(175,124,37,.28); }.rhythm-step { position:relative; z-index:1; padding-top:35px; }.rhythm-step::before { content:""; position:absolute; top:10px; left:0; width:13px; height:13px; border:3px solid #fffdf7; border-radius:50%; background:#d6a83e; box-shadow:0 0 0 1px rgba(175,124,37,.45); }.rhythm-step.active::before { background:#2c8a70; box-shadow:0 0 0 5px rgba(44,138,112,.12); }.rhythm-step span { display:block; color:#af7c25; font:500 10px/1 "DM Mono",monospace; }.rhythm-step strong { display:block; margin:7px 0 4px; color:#3b4f5d; font:600 19px/1 "Playfair Display",serif; }.rhythm-step small { display:block; max-width:190px; color:var(--muted); font-size:10px; line-height:1.5; }.notes-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:9px; }.note-line { display:flex; gap:10px; padding:14px; border:1px solid rgba(57,65,74,.12); border-radius:10px; background:rgba(255,255,255,.5); }.note-mark { color:#af7c25; font:600 18px/1 "Playfair Display",serif; }.note-line strong { display:block; margin-bottom:5px; color:#3b4f5d; font-size:12px; }.note-line p { margin:0; color:var(--muted); font-size:10px; line-height:1.5; }
 
 
-      .theme-picker { display:none; align-items:center; gap:7px; margin-left:2px; }.theme-picker-label { color:var(--muted); font:500 9px/1 "DM Mono",monospace; letter-spacing:.1em; text-transform:uppercase; }.theme-picker select { appearance:none; min-width:96px; padding:9px 26px 9px 10px; border:1px solid var(--line); border-radius:999px; outline:0; background:rgba(255,255,255,.035) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 10'%3E%3Cpath d='m2 3 3 3 3-3' fill='none' stroke='%2391a6c2' stroke-width='1.2'/%3E%3C/svg%3E") no-repeat right 10px center; color:var(--muted); font:600 10px/1 "DM Mono",monospace; letter-spacing:.06em; text-transform:uppercase; cursor:pointer; }.theme-picker select:focus { border-color:var(--gold); }.theme-picker option { color:#1d2c38; background:#fffdf7; }
+      .hero-placeholder { position:absolute; z-index:1; right:8%; top:12%; display:grid; place-items:center; width:210px; height:210px; border:1px dashed rgba(217,184,101,.55); border-radius:50%; background:rgba(7,17,31,.42); color:var(--gold-pale); text-align:center; box-shadow:0 0 0 18px rgba(217,184,101,.05); }.hero-placeholder span { display:block; font:600 76px/1 "Playfair Display",serif; }.hero-placeholder small { display:block; margin-top:9px; color:var(--gold); font:500 9px/1.45 "DM Mono",monospace; letter-spacing:.12em; text-transform:uppercase; }
+      .theme-picker { display:flex; align-items:center; gap:7px; margin-left:2px; }.theme-picker-label { color:var(--muted); font:500 9px/1 "DM Mono",monospace; letter-spacing:.1em; text-transform:uppercase; }.theme-picker select { appearance:none; min-width:96px; padding:9px 26px 9px 10px; border:1px solid var(--line); border-radius:999px; outline:0; background:rgba(255,255,255,.035) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 10'%3E%3Cpath d='m2 3 3 3 3-3' fill='none' stroke='%2391a6c2' stroke-width='1.2'/%3E%3C/svg%3E") no-repeat right 10px center; color:var(--muted); font:600 10px/1 "DM Mono",monospace; letter-spacing:.06em; text-transform:uppercase; cursor:pointer; }.theme-picker select:focus { border-color:var(--gold); }.theme-picker option { color:#1d2c38; background:#fffdf7; }
+      body[data-mode="sun"] .hero { background:linear-gradient(115deg,#fffdf7 0%,#f9efd4 60%,#e8d09b 100%); border-color:rgba(175,124,37,.22); box-shadow:0 24px 80px rgba(116,91,42,.12); }.hero::before { content:""; position:absolute; inset:0; z-index:1; pointer-events:none; background:radial-gradient(circle at 82% 40%,rgba(255,248,190,.95),transparent 12rem),linear-gradient(90deg,rgba(255,253,247,.15),rgba(255,253,247,0)); }.hero::after { z-index:1; } body[data-mode="sun"] .hero::after { background:linear-gradient(90deg,rgba(255,253,247,.96) 0%,rgba(255,253,247,.75) 48%,rgba(232,208,155,.12) 100%),linear-gradient(0deg,rgba(255,253,247,.38),transparent 62%); } body[data-mode="sun"] .hero-placeholder { border-color:rgba(175,124,37,.5); background:rgba(255,255,255,.28); color:#af7c25; box-shadow:0 0 0 18px rgba(175,124,37,.06); } body[data-mode="sun"] .hero-placeholder small { color:#9b6d1e; } body[data-mode="sun"] .hero-subtitle { color:#5d6c76; } body[data-mode="sun"] .button { color:#70480c; background:linear-gradient(135deg,rgba(175,124,37,.18),rgba(175,124,37,.05)); } body[data-mode="sun"] .button.ghost { color:#3c5968; background:rgba(255,255,255,.36); border-color:rgba(57,65,74,.2); } body[data-mode="sun"] .section-card { background:rgba(255,253,247,.8); box-shadow:0 18px 44px rgba(88,68,35,.08); } body[data-mode="sun"] .section-nav, body[data-mode="sun"] .calendar-frame, body[data-mode="sun"] .check-row, body[data-mode="sun"] .troop-family { background:rgba(255,255,255,.52); } body[data-mode="sun"] .section-nav a { color:#556673; } body[data-mode="sun"] .section-nav a:hover { color:#283744; } body[data-mode="sun"] .tab-panel h3, body[data-mode="sun"] .section-heading h2 { color:#283744; } body[data-mode="sun"] .tab-brief, body[data-mode="sun"] .signal-list li, body[data-mode="sun"] .guide-callout, body[data-mode="sun"] body[data-mode="sun"] .tab-list, body[data-mode="sun"] .event-tabs { background:rgba(255,255,255,.38); } body[data-mode="sun"]
       body[data-mode="royal"] { --ink:#07090f; --ink-2:#0d1220; --panel:#11182a; --panel-2:#17233b; --line:rgba(114,156,255,.2); --text:#eef3ff; --muted:#9aa8c5; --gold:#3e91ff; --gold-pale:#8ec2ff; --moon:#6ea8ff; --violet:#9b7cf2; --crimson:#ef5260; --mint:#65d6ae; background:#07090f; color:var(--text); }body[data-mode="royal"] .hero-placeholder { border-color:rgba(62,145,255,.65); color:#3e91ff; background:rgba(8,15,31,.62); box-shadow:0 0 0 18px rgba(62,145,255,.06),0 0 60px rgba(62,145,255,.16); }.royal-mark { color:#3e91ff!important; border-color:rgba(62,145,255,.65)!important; background:linear-gradient(145deg,rgba(62,145,255,.24),rgba(255,255,255,.02))!important; }.royal-word { color:#8ec2ff!important; }.royal-kicker { color:#3e91ff!important; }.royal-hero { background:radial-gradient(circle at 84% 35%,rgba(30,75,150,.4),transparent 17rem),linear-gradient(120deg,#080b15,#101b35 68%,#0d1326)!important; }.royal-hero::after { background:linear-gradient(90deg,rgba(7,9,15,.9),rgba(7,9,15,.45),rgba(7,9,15,.2))!important; }.royal-hero .hero-placeholder { border-radius:28px; }.royal-card { background:linear-gradient(145deg,rgba(18,31,58,.9),rgba(9,14,28,.9))!important; box-shadow:0 20px 50px rgba(0,0,0,.24)!important; }.royal-nav { background:rgba(17,24,42,.72)!important; }.royal-theme select { border-color:rgba(62,145,255,.5)!important; color:#8ec2ff!important; }
       body[data-mode="sun"] .hero { display:flex; } body[data-mode="sun"] .hero-content { z-index:2; } body[data-mode="sun"] .hero-placeholder { z-index:2; }
       body[data-mode="royal"] .hero-content { z-index:2; } body[data-mode="royal"] .hero h1 { color:#eef3ff; } body[data-mode="royal"] .hero .hero-subtitle { color:#cbd7ed; } body[data-mode="royal"] .hero .eyebrow { color:#8ec2ff; } body[data-mode="royal"] .hero .button { color:#d9e9ff; border-color:rgba(62,145,255,.6); background:linear-gradient(135deg,rgba(62,145,255,.24),rgba(62,145,255,.06)); } body[data-mode="royal"] .hero .button.ghost { color:#bdcce4; border-color:rgba(142,194,255,.24); background:rgba(7,9,15,.3); }
@@ -217,16 +212,16 @@
       .site-footer { display:flex; justify-content:space-between; gap:18px; padding:21px clamp(18px,4vw,64px); border-top:1px solid var(--line); background:rgba(4,13,25,.48); color:var(--muted); font-size:10px; line-height:1.5; }.footer-strong { color:#c8d7ec; }
       .fc { --fc-border-color:rgba(169,201,255,.12); --fc-page-bg-color:transparent; --fc-neutral-bg-color:rgba(169,201,255,.04); --fc-today-bg-color:rgba(217,184,101,.09); --fc-list-event-hover-bg-color:rgba(169,201,255,.08); font-family:Manrope,sans-serif; }.fc .fc-toolbar { gap:9px; margin-bottom:14px; }.fc .fc-toolbar-title { color:#edf4ff; font:600 18px/1 "Playfair Display",serif; }.fc .fc-button { border:1px solid rgba(169,201,255,.16)!important; border-radius:7px!important; background:rgba(169,201,255,.07)!important; color:#dce9fa!important; box-shadow:none!important; font:600 9px/1 "DM Mono",monospace; letter-spacing:.05em; text-transform:uppercase; }.fc .fc-button:hover,.fc .fc-button-active { background:rgba(217,184,101,.17)!important; color:var(--gold-pale)!important; }.fc .fc-col-header-cell-cushion { padding:7px 2px; color:var(--muted); font:500 9px/1 "DM Mono",monospace; letter-spacing:.08em; text-transform:uppercase; }.fc .fc-daygrid-day-number { padding:6px 7px; color:#b9c9df; font:500 10px/1 "DM Mono",monospace; }.fc .fc-day-today .fc-daygrid-day-number { color:var(--gold-pale); }.fc-event { margin:1px 2px!important; padding:2px 4px!important; border:0!important; border-left:2px solid var(--gold)!important; border-radius:3px!important; background:rgba(217,184,101,.18)!important; color:#edf5ff!important; font-size:8px!important; line-height:1.25!important; white-space:normal!important; }.fc-event.ragnarok { border-left-color:var(--violet)!important; background:rgba(180,152,245,.16)!important; }.fc-event.dark-omens { border-left-color:var(--crimson)!important; background:rgba(239,118,130,.16)!important; }.fc-event.tinman { border-left-color:var(--moon)!important; background:rgba(169,201,255,.16)!important; }.fc .fc-daygrid-more-link { color:var(--gold)!important; font-size:9px; }.fc-theme-standard td,.fc-theme-standard th { border-color:rgba(169,201,255,.12); }
       @keyframes arrive { from { opacity:0; transform:translateY(10px); } to { opacity:1; transform:translateY(0); } } @keyframes pulse { 0%,100% { opacity:1; }50% { opacity:.55; } }
-      @media (max-width:1050px) { .command-grid { grid-template-columns:1fr; }.section-nav { position:static; display:flex; flex-wrap:wrap; overflow:visible; gap:2px; padding:8px; }.section-nav-title { display:none; }.section-nav a { min-width:max-content; }.nav-clocks { flex:0 0 100%; flex-direction:row; gap:10px; margin-top:8px; padding-top:10px; }.nav-clocks .r-clock { flex:1 1 0; grid-template-columns:1fr 82px; gap:6px; }.nav-clocks .clock-face { width:82px; height:82px; margin-left:auto; }.calendar-layout,.checklist-layout { grid-template-columns:1fr; }.calendar-note { display:grid; grid-template-columns:1fr 1fr; gap:15px; align-items:center; }.calendar-note p { margin:0; }.r-clock-note { display:flex; } }
-      @media (max-width:760px) { .site-header { gap:12px; padding:10px 16px; }.header-divider,.header-live { display:none; }.header-time { margin-left:auto; }.theme-toggle { width:34px; padding:10px; justify-content:center; overflow:hidden; white-space:nowrap; }.theme-toggle span { display:none; }.page-shell { padding:18px 15px 45px; }.hero { min-height:350px; padding:28px; border-radius:20px; }.hero::after { background:linear-gradient(90deg,rgba(7,17,31,.9),rgba(7,17,31,.42)),linear-gradient(0deg,rgba(7,17,31,.78),transparent); }.section-card { padding:20px 16px; }.section-heading { display:block; }.section-heading h2 { margin-bottom:9px; }.event-tabs { grid-template-columns:1fr; }.tab-list { flex-direction:row; overflow:auto; border-right:0; border-bottom:1px solid var(--line); }.tab-button { min-width:max-content; }.tab-panel { padding:18px; }.signal-list,.tier-grid { grid-template-columns:1fr; }.guide-sections { grid-template-columns:1fr; }.guide-defence { grid-column:auto; }.guide-panel-content { padding:16px; }.troop-selectors { grid-template-columns:repeat(2,minmax(0,1fr)); }.troop-result-head { display:block; }.troop-code { display:block; margin-top:6px; }.tier-grid { padding-left:14px; }.calendar-note { display:block; }.calendar-note p { margin-bottom:13px; }.site-footer { flex-direction:column; }.fc .fc-toolbar { flex-wrap:wrap; }.fc .fc-toolbar-chunk:nth-child(2) { order:-1; width:100%; text-align:left; }.fc .fc-toolbar-title { margin:0!important; } }
+      @media (max-width:1050px) { .command-grid { grid-template-columns:1fr; }.section-nav { position:static; display:flex; flex-wrap:wrap; overflow:visible; gap:2px; padding:8px; }.section-nav-title { display:none; }.section-nav a { min-width:max-content; }.nav-clocks { flex:0 0 100%; flex-direction:row; gap:10px; margin-top:8px; padding-top:10px; }.nav-clocks .r-clock { flex:1 1 0; grid-template-columns:1fr 82px; gap:6px; }.nav-clocks .clock-face { width:82px; height:82px; margin-left:auto; }.calendar-layout,.checklist-layout { grid-template-columns:1fr; } }
+      @media (max-width:760px) { .site-header { gap:12px; padding:10px 16px; }.header-divider,.header-live { display:none; }.header-time { margin-left:auto; }.theme-toggle { width:34px; padding:10px; justify-content:center; overflow:hidden; white-space:nowrap; }.theme-toggle span { display:none; }.page-shell { padding:18px 15px 45px; }.hero { min-height:350px; padding:28px; border-radius:20px; }.hero::after { background:linear-gradient(90deg,rgba(7,17,31,.9),rgba(7,17,31,.42)),linear-gradient(0deg,rgba(7,17,31,.78),transparent); }.section-card { padding:20px 16px; }.section-heading { display:block; }.section-heading h2 { margin-bottom:9px; }.event-tabs { grid-template-columns:1fr; }.tab-list { flex-direction:row; overflow:auto; border-right:0; border-bottom:1px solid var(--line); }.tab-button { min-width:max-content; }.tab-panel { padding:18px; }.signal-list,.tier-grid { grid-template-columns:1fr; }.tier-grid { padding-left:14px; }.site-footer { flex-direction:column; }.fc .fc-toolbar { flex-wrap:wrap; }.fc .fc-toolbar-chunk:nth-child(2) { order:-1; width:100%; text-align:left; }.fc .fc-toolbar-title { margin:0!important; } }
       @media (prefers-reduced-motion:reduce) { *,*::before,*::after { animation-duration:.01ms!important; animation-iteration-count:1!important; transition-duration:.01ms!important; scroll-behavior:auto!important; } }
     </style>
   </head>
   <body>
     <header class="site-header">
       <a class="brand" href="#top" aria-label="PNX clan command home">
-        <span class="brand-mark" id="brand-mark"><img class="brand-mark" src="./brand/pnxmoonyt.png" alt="PNX" /> </span>
-        <span><span class="brand-kicker">The Phoenix</span><span class="brand-name" id="brand-name">Moon</span></span>
+        <span class="brand-mark" id="brand-mark" aria-hidden="true">◔</span>
+        <span><span class="brand-kicker">Total Battle clan</span><span class="brand-name" id="brand-name">Moonwatch</span></span>
       </a>
       <span class="header-divider" aria-hidden="true"></span>
       <div class="header-live" aria-live="polite">
@@ -237,13 +232,14 @@
         <span id="utc-time">--</span>
         <span id="reset-readout">R · reset at 17:00 UTC</span>
       </div>
+      <label class="theme-picker"><span class="theme-picker-label">Theme</span><select data-theme-select aria-label="Choose visual theme"><option value="moon">Moon</option><option value="sun">Sun</option><option value="royal">PNX Royal</option></select></label>
     </header>
 
-    <main id="site-body" aria-live="polite"><div class="empty-state">Opening the clan hub</div></main>
+    <main id="site-body" aria-live="polite"><div class="empty-state">Opening the command ledger…</div></main>
 
     <footer class="site-footer">
-      <span><span class="footer-strong">The Phoenix Clan Hub</span> · since 22 September 2025</span>
-      <span>Event calendar: supplied .ics file</span>
+      <span><span class="footer-strong">Moonwatch Command Ledger</span> · Reset reference stays fixed at 17:00 UTC for every time zone.</span>
+      <span>Local static data: <span class="footer-strong">/data/</span> · Event calendar: supplied .ics file</span>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/ical.js@1.5.0/build/ical.min.js"></script>
@@ -251,10 +247,11 @@
     <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/daygrid@6.1.17/index.global.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/icalendar@6.1.17/index.global.min.js"></script>
     <script>
-      const appState = { calendar: null, activeEvents: [], calendarEvents: [], mode: 'moon' };
-      const themeMeta = { moon:{mark:'◔',name:'Moon', logo:'./brand/pnxmoonyt.png',kicker:'The Phoenix',title:'Moonw — Clan Hub'}, sun:{mark:'☼',name:'Sun',logo:'./brand/pnxmoonyt.png',kicker:'The Phoenix',title:'Sun — Clan Hub'}, royal:{mark:'♛',name:'PNX Royal',logo:'./brand/pnxmoonyt.png',kicker:'The Phoenix',title:'Royal — Clan Hub'} };
+      const appState = { calendar: null, activeEvents: [], mode: 'moon' };
+      const themeMeta = { moon:{mark:'◔',name:'Moonwatch',kicker:'Total Battle clan',title:'Moonwatch — Clan Command'}, sun:{mark:'☼',name:'Sunwatch',kicker:'Total Battle clan',title:'Sunwatch — Clan Command'}, royal:{mark:'♛',name:'PNX Royal',kicker:'Total Battle clan',title:'PNX Royal — Clan Command'} };
       const fallbackGuides = [{ id:'olympus', name:'Olympus', icon:'⌁', cadence:'Five-day cycle', tagline:'Plan the route before the first horn.', brief:'Add clan-approved routes and priorities in the local event guide data.', signals:['Confirm the day and variant shown on the calendar','Set the shared target order in clan chat','Record troop or resource constraints'], callout:'Planning shell — add clan-specific notes in data/event-guides.json.' }];
       const fallbackChecklist = [{ id:'gifts', label:'Claim daily gifts and timed rewards', hint:'Clear anything that expires before reset.' }];
+      const fallbackTroops = [{ id:'common', name:'Common Monsters', mark:'●', note:'Add clan-tested examples in the local troop data.', tiers:[{label:'G5', code:'G5M5S4C4', example:'Placeholder composition.'},{label:'G6', code:'G6M6S5C5', example:'Placeholder composition.'},{label:'G7', code:'G7M7S6C6', example:'Placeholder composition.'}] }];
 
       const escapeHtml = (value = '') => String(value).replace(/[&<>'"]/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#039;','"':'&quot;'}[char]));
       const fetchJson = async (path, fallback) => { try { const response = await fetch(path); if (!response.ok) throw new Error('Request failed'); return await response.json(); } catch { return fallback; } };
@@ -342,123 +339,54 @@
       }
       async function hydrateActiveEvent() { try { const response = await fetch('./data/tb-events.ics'); if (!response.ok) throw new Error('calendar unavailable'); const events = parseIcs(await response.text()); renderActiveEvent(events); renderChecklist(appState.checklistItems || [], events); if (appState.guides) { appState.olympusStage = getOlympusStageFromCalendar(); renderGuides(appState.guides); } renderRClocks(); } catch { const live = document.getElementById('active-event'); if (live) live.textContent = 'Calendar unavailable'; } }
       function guideStartDate(guide) {
-        const matcher = new RegExp(guide.calendarMatch || guide.name, 'i');
-        const matches = appState.calendarEvents.filter(event => matcher.test(event.title));
+        const matches = (appState.calendarEvents || []).filter(event => new RegExp(guide.calendarMatch || guide.name, 'i').test(event.title));
         const now = new Date();
         const upcoming = matches.filter(event => event.start >= now).sort((a,b) => a.start - b.start);
         return (upcoming[0] || matches.sort((a,b) => a.start - b.start)[0] || {}).start || new Date(8640000000000000);
       }
       function sortedGuides(guides) { return [...guides].sort((a,b) => guideStartDate(a) - guideStartDate(b)); }
-      function formatGuideCountdown(date) {
-        if (!date || date.getTime() >= 8640000000000000) return 'Date to be confirmed';
-        const totalHours = Math.floor(Math.max(0, date.getTime() - Date.now()) / 3600000);
-        const days = Math.floor(totalHours / 24);
-        const hours = totalHours % 24;
-        return `in ${days} ${days === 1 ? 'day' : 'days'} ${hours} ${hours === 1 ? 'hour' : 'hours'}`;
-      }
-      function renderFlatPoints(points) {
-        return Object.keys(points || {}).sort((a,b) => Number(a) - Number(b)).map(level => {
-          const entry = points[level];
-          const maxPoints = typeof entry.maxPoints === 'number' ? entry.maxPoints.toLocaleString() : entry.maxPoints || 'TBD';
-          return `<tr><td>${escapeHtml(entry.level || `Level ${level}`)}</td><td>${escapeHtml(maxPoints)}</td></tr>`;
-        }).join('');
-      }
+      function formatGuideCountdown(date) { if (!date || date.getTime() >= 8640000000000000) return 'Date to be confirmed'; const remaining = Math.max(0, date.getTime() - Date.now()); const totalHours = Math.floor(remaining / 3600000); const days = Math.floor(totalHours / 24); const hours = totalHours % 24; return `in ${days} ${days === 1 ? 'day' : 'days'} ${hours} ${hours === 1 ? 'hour' : 'hours'}`; }
+      function renderFlatPoints(points) { return Object.keys(points || {}).sort((a,b) => Number(a)-Number(b)).map(level => `<tr><td>${escapeHtml(points[level].level || `Level ${level}`)}</td><td>${typeof points[level].maxPoints === 'number' ? Number(points[level].maxPoints).toLocaleString() : escapeHtml(points[level].maxPoints || 'TBD')}</td></tr>`).join(''); }
       function renderPointsTable(points) { return `<table class="points-table"><thead><tr><th>Level</th><th>Max points</th></tr></thead><tbody>${renderFlatPoints(points)}</tbody></table>`; }
       function getOlympusStageFromCalendar() {
         const now = new Date();
-        const events = appState.calendarEvents.filter(event => /Trials of Olympus|Olympus/i.test(event.title));
-        const stageFor = title => {
-          const text = title.toLowerCase();
-          if (text.includes('chimera')) return 1;
-          if (text.includes('basilisk')) return 2;
-          if (text.includes('lava')) return 3;
-          if (text.includes('tartaros') || text.includes('salamander')) return 4;
-          if (text.includes('briareus') || text.includes('briareu')) return 5;
-          return null;
-        };
-        const active = events.filter(event => event.start <= now && event.end > now).sort((a,b) => a.start - b.start);
-        const upcoming = events.filter(event => event.start > now).sort((a,b) => a.start - b.start);
-        const selected = active[0] || upcoming[0];
-        return selected ? stageFor(selected.title) || 1 : 1;
+        const olympusEvents = (appState.calendarEvents || []).filter(event => /Trials of Olympus|Olympus/i.test(event.title));
+        const stageFor = title => { const text = title.toLowerCase(); if (text.includes('chimera')) return 1; if (text.includes('basilisk')) return 2; if (text.includes('lava')) return 3; if (text.includes('tartaros') || text.includes('salamander')) return 4; if (text.includes('briareus') || text.includes('briareu')) return 5; return null; };
+        const active = olympusEvents.filter(event => event.start <= now && (!event.end || event.end > now)).sort((a,b) => a.start - b.start);
+        const next = olympusEvents.filter(event => event.start > now).sort((a,b) => a.start - b.start);
+        const selected = active[0] || next[0];
+        return selected ? (stageFor(selected.title) || 1) : 1;
       }
-      function updateOlympusStage(stage) {
-        appState.olympusStage = Number(stage);
-        const bonus = appState.eventBonuses.olympus || {};
-        const trial = bonus.dailyTrials?.[appState.olympusStage - 1];
-        const pointLevels = appState.olympusPoints[String(appState.olympusStage)]?.levels || {};
-        const button = document.getElementById('olympus-epic-button');
-        const table = document.getElementById('olympus-points-table');
-        const stageLabel = document.getElementById('olympus-stage-label');
-        if (button && trial) button.textContent = `◈ ${trial.epicLabel}`;
-        if (stageLabel && trial) stageLabel.textContent = `${trial.stage} · maximum points`;
-        if (table) table.innerHTML = renderPointsTable(pointLevels);
-        document.querySelectorAll('[data-olympus-stage]').forEach(item => {
-          const selected = item.dataset.olympusStage === String(appState.olympusStage);
-          item.classList.toggle('active', selected);
-          item.classList.toggle('is-current', item.dataset.olympusStage === String(getOlympusStageFromCalendar()));
-          item.setAttribute('aria-pressed', selected);
-        });
-      }
-      function updateRagnarokMonster(index) {
-        const bonus = appState.eventBonuses.ragnarok || {};
-        const monsters = bonus.epicMonsters || [];
-        const selected = monsters[Number(index)];
-        if (!selected) return;
-        const button = document.getElementById('ragnarok-epic-button');
-        const shop = document.getElementById('ragnarok-shop-list');
-        const heading = document.getElementById('ragnarok-shop-heading');
-        if (button) button.textContent = `◈ ${selected.epicLabel}`;
-        if (heading) heading.textContent = `${selected.target} Shop`;
-        if (shop) shop.innerHTML = (bonus.shopRecommendations?.[selected.target] || []).map(item => `<li>${escapeHtml(item)}</li>`).join('');
-        document.querySelectorAll('[data-ragnarok-monster]').forEach(item => {
-          const active = item.dataset.ragnarokMonster === String(index);
-          item.classList.toggle('active', active);
-          item.setAttribute('aria-pressed', active);
-        });
-      }
+      function updateOlympusStage(stage) { appState.olympusStage = Number(stage); const data = (appState.eventBonuses || {}).olympus || {}; const trial = (data.dailyTrials || [])[Number(stage)-1] || (data.dailyTrials || [])[0]; const points = ((appState.olympusPoints || {})[String(stage)] || {}).levels || {}; const button = document.getElementById('olympus-epic-button'); const table = document.getElementById('olympus-points-table'); const stageLabel = document.getElementById('olympus-stage-label'); if (button) button.innerHTML = `◈ ${escapeHtml(trial.epicLabel)}`; if (stageLabel) stageLabel.textContent = `${escapeHtml(trial.stage)} · maximum points`; if (table) table.innerHTML = renderPointsTable(points); document.querySelectorAll('[data-olympus-stage]').forEach(item => { const active = item.dataset.olympusStage === String(stage); const calendarStage = Number(stage) === getOlympusStageFromCalendar(); item.classList.toggle('active',active); item.classList.toggle('is-current',calendarStage); item.setAttribute('aria-pressed',active); }); }
+      function updateRagnarokMonster(index) { const bonus = (appState.eventBonuses || {}).ragnarok || {}; const monsters = bonus.epicMonsters || []; const selected = monsters[Number(index)] || monsters[0]; const key = selected && selected.target; const button = document.getElementById('ragnarok-epic-button'); const shop = document.getElementById('ragnarok-shop-list'); const heading = document.getElementById('ragnarok-shop-heading'); if (button) button.innerHTML = `◈ ${escapeHtml(selected.epicLabel)}`; if (heading) heading.textContent = `${escapeHtml(key)} Shop`; if (shop) shop.innerHTML = (bonus.shopRecommendations?.[key] || []).map(item => `<li>${escapeHtml(item)}</li>`).join(''); document.querySelectorAll('[data-ragnarok-monster]').forEach(item => { item.classList.toggle('active', item.dataset.ragnarokMonster === String(index)); item.setAttribute('aria-pressed', item.dataset.ragnarokMonster === String(index)); }); }
       function renderEventDetails(guide) {
         if (!['dark-omens','tinman','olympus','ragnarok'].includes(guide.id)) return '';
-        const bonus = appState.eventBonuses[guide.id] || {};
+        const bonus = (appState.eventBonuses || {})[guide.id] || (appState.eventBonuses || {})['dark-omens'] || {};
         if (guide.id === 'olympus') {
           const trials = bonus.dailyTrials || [];
-          const selectedStage = appState.olympusStage || getOlympusStageFromCalendar();
-          const trial = trials[selectedStage - 1] || trials[0] || { epicLabel:'Epic target', stage:'Stage 1' };
+          const selectedStage = appState.olympusStage || getOlympusStageFromCalendar(); const firstTrial = trials[selectedStage - 1] || trials[0] || {epicLabel:'Epic Chimera',stage:'Stage 1'};
           appState.olympusStage = selectedStage;
-          const recommendedTalents = (bonus.recommendedTalents || []).map(item => `<tr><td>${escapeHtml(item.stage)}</td><td>${escapeHtml(item.value)}</td></tr>`).join('');
-          const stagePoints = appState.olympusPoints[String(selectedStage)]?.levels || {};
-          return `<div class="guide-detail guide-trials"><h4>Daily Trials</h4><span class="current-stage-note">● Calendar-selected stage</span><div class="trial-buttons">${trials.map((item,index) => `<button class="trial-button ${index + 1 === selectedStage ? 'active' : ''} ${index + 1 === getOlympusStageFromCalendar() ? 'is-current' : ''}" type="button" data-olympus-stage="${index + 1}" aria-pressed="${index + 1 === selectedStage}">${escapeHtml(item.stage)}</button>`).join('')}</div></div><button class="epic-button" id="olympus-epic-button" type="button" data-scroll-target="troops">◈ ${escapeHtml(trial.epicLabel)}</button><div class="guide-sections"><div class="guide-detail"><h4>Active clan bonuses</h4><ul class="bonus-list">${(bonus.activeBonuses || []).map(item => `<li>${escapeHtml(item)}</li>`).join('')}</ul></div><div class="guide-detail"><h4>Recommended talents</h4><table class="points-table"><thead><tr><th>Stage</th><th>Talent</th></tr></thead><tbody>${recommendedTalents}</tbody></table></div><div class="guide-detail guide-defence"><h4>Defence note</h4>${escapeHtml(bonus.defenceNote || 'Keep an active army for defence.')}</div><div class="guide-detail"><h4 id="olympus-stage-label">${escapeHtml(trial.stage)} · maximum points</h4><div id="olympus-points-table">${renderPointsTable(stagePoints)}</div></div></div>`;
+          appState.olympusPoints = appState.olympusPoints || {};
+          return `<div class="guide-detail guide-trials"><h4>Daily Trials</h4><span class="current-stage-note">● Calendar-selected stage</span><div class="trial-buttons">${trials.map((trial,index) => `<button class="trial-button ${(index + 1) === selectedStage ? 'active is-current' : ''}" type="button" data-olympus-stage="${index+1}" aria-pressed="${(index + 1) === selectedStage}">${escapeHtml(trial.stage)}</button>`).join('')}</div></div><button class="epic-button" id="olympus-epic-button" type="button" data-scroll-target="troops">◈ ${escapeHtml(firstTrial.epicLabel)}</button><div class="guide-sections"><div class="guide-detail"><h4>Active clan bonuses</h4><ul class="bonus-list">${(bonus.activeBonuses || []).map(item => `<li>${escapeHtml(item)}</li>`).join('')}</ul></div><div class="guide-detail"><h4>Recommended talents</h4><table class="points-table"><thead><tr><th>Stage</th><th>Talent</th></tr></thead><tbody>${(bonus.recommendedTalents || []).map(item => `<tr><td>${escapeHtml(item.stage)}</td><td>${escapeHtml(item.value)}</td></tr>`).join('')}</tbody></table></div><div class="guide-detail guide-defence"><h4>Defence note</h4>${escapeHtml(bonus.defenceNote || 'Keep an active army for defence.')}</div><div class="guide-detail"><h4 id="olympus-stage-label">${escapeHtml(firstTrial.stage)} · maximum points</h4><div id="olympus-points-table">${renderPointsTable((appState.olympusPoints[String(selectedStage)] || {}).levels || {})}</div></div></div>`;
         }
         if (guide.id === 'ragnarok') {
           const monsters = bonus.epicMonsters || [];
-          const selected = monsters[0];
-          if (!selected) return '';
-          const shopItems = bonus.shopRecommendations?.[selected.target] || [];
-          return `<div class="guide-detail guide-trials"><h4>Epic Monsters</h4><div class="trial-buttons">${monsters.map((monster,index) => `<button class="monster-choice ${index === 0 ? 'active' : ''}" type="button" data-ragnarok-monster="${index}" aria-pressed="${index === 0}">${escapeHtml(monster.label)}</button>`).join('')}</div></div><button class="epic-button" id="ragnarok-epic-button" type="button" data-scroll-target="troops">◈ ${escapeHtml(selected.epicLabel)}</button><div class="guide-sections"><div class="guide-detail"><h4>Active clan bonuses</h4><ul class="bonus-list">${(bonus.activeBonuses || []).map(item => `<li>${escapeHtml(item)}</li>`).join('')}</ul></div><div class="guide-detail"><h4 id="ragnarok-shop-heading">${escapeHtml(selected.target)} Shop</h4><ul class="bonus-list" id="ragnarok-shop-list">${shopItems.map(item => `<li>${escapeHtml(item)}</li>`).join('')}</ul></div><div class="guide-detail guide-defence"><h4>Defence note</h4>${escapeHtml(bonus.defenceNote || 'Keep an active army for defence.')}</div><div class="guide-detail"><h4>Maximum points by troop level</h4>${renderPointsTable(appState.ragnarokPoints)}</div></div>`;
+          const selected = monsters[0] || {label:'Jormungandir',epicLabel:'Epic Jormungandir',target:'Jormungandir'};
+          appState.ragnarokMonster = 0;
+          const shopItems = (bonus.shopRecommendations?.[selected.target] || []);
+          return `<div class="guide-detail guide-trials"><h4>Epic Monsters</h4><div class="trial-buttons">${monsters.map((monster,index) => `<button class="monster-choice ${index === 0 ? 'active' : ''}" type="button" data-ragnarok-monster="${index}" aria-pressed="${index === 0}">${escapeHtml(monster.label)}</button>`).join('')}</div></div><button class="epic-button" id="ragnarok-epic-button" type="button" data-scroll-target="troops">◈ ${escapeHtml(selected.epicLabel)}</button><div class="guide-sections"><div class="guide-detail"><h4>Active clan bonuses</h4><ul class="bonus-list">${(bonus.activeBonuses || []).map(item => `<li>${escapeHtml(item)}</li>`).join('')}</ul></div><div class="guide-detail"><h4 id="ragnarok-shop-heading">${escapeHtml(selected.target)} Shop</h4><ul class="bonus-list" id="ragnarok-shop-list">${shopItems.map(item => `<li>${escapeHtml(item)}</li>`).join('')}</ul></div><div class="guide-detail guide-defence"><h4>Defence note</h4>${escapeHtml(bonus.defenceNote || 'Keep an active army for defence.')}</div><div class="guide-detail"><h4>Maximum points by troop level</h4>${renderPointsTable(appState.ragnarokPoints || {})}</div></div>`;
         }
-        const points = appState.darkOmensPoints;
-        const targetName = guide.epicTarget || (guide.id === 'tinman' ? 'Tinman' : 'Acronomancer');
-        return `<button class="epic-button" type="button" data-scroll-target="troops">◈ Epic ${escapeHtml(targetName)}</button><div class="guide-sections"><div class="guide-detail"><h4>Active clan bonuses</h4><ul class="bonus-list">${(bonus.activeBonuses || []).map(item => `<li>${escapeHtml(item)}</li>`).join('')}</ul></div><div class="guide-detail"><h4>Open windows · R time</h4><ul class="window-list">${(bonus.openWindows || []).map(item => `<li class="${guide.id === 'dark-omens' ? 'dark-omens-timing-cue' : ''}">${escapeHtml(item)}</li>`).join('')}</ul></div><div class="guide-detail guide-defence"><h4>Defence note</h4>${escapeHtml(bonus.defenceNote || 'Keep an active army for defence.')}</div><div class="guide-detail"><h4>Maximum points by troop level</h4>${renderPointsTable(points)}</div></div>`;
+        const points = appState.darkOmensPoints || {};
+        return `<button class="epic-button" type="button" data-scroll-target="troops">◈ Epic ${escapeHtml(guide.epicTarget || (guide.id === 'tinman' ? 'Tinman' : 'Acronomancer'))}</button><div class="guide-sections"><div class="guide-detail"><h4>Active clan bonuses</h4><ul class="bonus-list">${(bonus.activeBonuses || []).map(item => `<li>${escapeHtml(item)}</li>`).join('')}</ul></div><div class="guide-detail"><h4>Open windows · R time</h4><ul class="window-list">${(bonus.openWindows || []).map(item => `<li class="${guide.id === 'dark-omens' ? 'dark-omens-timing-cue' : ''}">${escapeHtml(item)}</li>`).join('')}</ul></div><div class="guide-detail guide-defence"><h4>Defence note</h4>${escapeHtml(bonus.defenceNote || 'Keep an active army for defence.')}</div><div class="guide-detail"><h4>Maximum points by troop level</h4>${renderPointsTable(points)}</div></div>`;
       }
       function renderGuides(guides) {
-        const target = document.getElementById('event-guides');
-        if (!target || !guides.length) return;
+        const target = document.getElementById('event-guides'); if (!target) return;
         appState.guides = guides;
         const ordered = sortedGuides(guides);
-        target.innerHTML = `<div class="event-tabs"><div class="tab-list" role="tablist" aria-label="Major event briefings">${ordered.map((guide,index) => `<button id="guide-tab-${escapeHtml(guide.id)}" class="tab-button ${index === 0 ? 'active' : ''}" type="button" role="tab" aria-selected="${index === 0}" aria-controls="guide-panel" data-guide="${escapeHtml(guide.id)}"><span class="tab-icon">${escapeHtml(guide.icon)}</span>${escapeHtml(guide.name)}</button>`).join('')}</div><div class="tab-panel" id="guide-panel" role="tabpanel"></div></div>`;
-        const panel = target.querySelector('#guide-panel');
-        const openGuide = id => {
-          const guide = ordered.find(item => item.id === id) || ordered[0];
-          const date = guideStartDate(guide);
-          target.querySelectorAll('[data-guide]').forEach(button => {
-            const active = button.dataset.guide === guide.id;
-            button.classList.toggle('active', active);
-            button.setAttribute('aria-selected', active);
-          });
-          const background = guide.background?.startsWith('./brand/') ? guide.background : './brand/moonlithero.png';
-          panel.innerHTML = `<div class="guide-panel-shell" style="--guide-bg:url('${escapeHtml(background)}')"><div class="guide-panel-content"><div class="tab-panel-head"><div><h3>${escapeHtml(guide.name)}</h3><p class="tab-tagline">${escapeHtml(guide.tagline)}</p><span class="guide-date">Next window · ${escapeHtml(formatGuideCountdown(date))}</span></div><span class="tab-cadence">${escapeHtml(guide.cadence)}</span></div><p class="tab-brief">${escapeHtml(guide.brief)}</p><ul class="signal-list">${(guide.signals || []).map(signal => `<li>${escapeHtml(signal)}</li>`).join('')}</ul>${renderEventDetails(guide)}<div class="guide-callout">${escapeHtml(guide.callout)}</div></div></div>`;
-        };
-        target.querySelectorAll('[data-guide]').forEach(button => button.addEventListener('click', () => openGuide(button.dataset.guide)));
-        openGuide(ordered[0].id);
+        target.innerHTML = `<div class="event-tabs"><div class="tab-list" role="tablist" aria-label="Major event briefings">${ordered.map((guide,index) => `<button class="tab-button ${index === 0 ? 'active' : ''}" type="button" role="tab" aria-selected="${index === 0}" data-guide="${escapeHtml(guide.id)}"><span class="tab-icon">${escapeHtml(guide.icon)}</span>${escapeHtml(guide.name)}</button>`).join('')}</div><div class="tab-panel" id="guide-panel"></div></div>`;
+        const panel = document.getElementById('guide-panel');
+        const openGuide = id => { const guide = ordered.find(item => item.id === id) || ordered[0]; const date = guideStartDate(guide); document.querySelectorAll('[data-guide]').forEach(button => { const active = button.dataset.guide === guide.id; button.classList.toggle('active',active); button.setAttribute('aria-selected',active); }); panel.innerHTML = `<div class="guide-panel-shell" style="--guide-bg:url('${escapeHtml(guide.background || '/manus-storage/moonwatch-command-bg_4d156c7b.jpg')}')"><div class="guide-panel-content"><div class="tab-panel-head"><div><h3>${escapeHtml(guide.name)}</h3><p class="tab-tagline">${escapeHtml(guide.tagline)}</p><span class="guide-date">Next window · ${escapeHtml(formatGuideCountdown(date))}</span></div><span class="tab-cadence">${escapeHtml(guide.cadence)}</span></div><p class="tab-brief">${escapeHtml(guide.brief)}</p><ul class="signal-list">${guide.signals.map(signal => `<li>${escapeHtml(signal)}</li>`).join('')}</ul>${renderEventDetails(guide)}<div class="guide-callout">${escapeHtml(guide.callout)}</div></div></div>`; };
+        target.querySelectorAll('[data-guide]').forEach(button => button.addEventListener('click', () => openGuide(button.dataset.guide))); openGuide(ordered[0].id);
       }
       const epicEventRules = [
         { match:/Ancients'?\s+Treasure/i, monster:'Tower' },
@@ -505,39 +433,24 @@
       const troopLabels = { G:'Guardsmen', S:'Specialists', M:'Monsters', E:'Engineering Corps' };
       function selectedTroopCode(values, includeEngineering) { return `G${values.G}S${values.S}M${values.M}${includeEngineering ? `E${values.E}` : ''}`; }
       function renderTroopCalculator(categories, families) {
-        const target = document.getElementById('troop-library');
-        if (!target) return;
-        const engineeringAvailable = Object.keys(families.engineering || {}).length > 0;
-        target.innerHTML = `<div class="troop-categories">${categories.map((category,index) => {
-          const selectors = ['G','S','M','E'].filter(selector => selector !== 'E' || category.engineering && engineeringAvailable);
-          return `<details class="troop-category" data-troop-category="${escapeHtml(category.id)}" ${index === 0 ? 'open' : ''}><summary><span class="troop-category-title"><strong>${escapeHtml(category.label)}</strong><span>${escapeHtml(category.description)}</span></span></summary><div class="troop-calculator"><div class="troop-selectors">${selectors.map(selector => `<div class="troop-selector"><label for="${escapeHtml(category.id)}-${selector}">${selector} · ${troopLabels[selector]}</label><select id="${escapeHtml(category.id)}-${selector}" data-troop-selector="${selector}">${troopLevels[selector].map(level => `<option value="${level}" ${String(category.default?.[selector] || (selector === 'S' ? '3' : '5')) === level ? 'selected' : ''}>${selector}${level}</option>`).join('')}</select></div>`).join('')}</div><div class="troop-result" data-troop-result></div></div></details>`;
-        }).join('')}</div>`;
+        const target = document.getElementById('troop-library'); if (!target) return;
+        appState.troopFamilies = families;
+        target.innerHTML = `<div class="troop-categories">${categories.map((category,index) => `<details class="troop-category" data-troop-category="${escapeHtml(category.id)}" ${index === 0 ? 'open' : ''}><summary><span class="troop-category-title"><strong>${escapeHtml(category.label)}</strong><span>${escapeHtml(category.description)}</span></span></summary><div class="troop-calculator"><div class="troop-selectors">${['G','S','M','E'].map(selector => `<div class="troop-selector"><label for="${escapeHtml(category.id)}-${selector}">${selector} · ${troopLabels[selector]}</label><select id="${escapeHtml(category.id)}-${selector}" data-troop-selector="${selector}" ${selector === 'E' && !category.engineering ? 'disabled' : ''}>${troopLevels[selector].map(level => `<option value="${level}" ${String(category.default?.[selector] || (selector === 'S' ? '3' : '5')) === level ? 'selected' : ''}>${selector}${level}</option>`).join('')}</select></div>`).join('')}</div><div class="troop-result" data-troop-result></div></div></details>`).join('')}</div>`;
         target.querySelectorAll('[data-troop-category]').forEach(card => {
-          const category = categories.find(item => item.id === card.dataset.troopCategory);
-          if (!category) return;
+          const category = categories.find(item => item.id === card.dataset.troopCategory) || categories[0];
           const update = () => {
             const values = {};
             card.querySelectorAll('[data-troop-selector]').forEach(select => { values[select.dataset.troopSelector] = select.value; });
-            const includeEngineering = Boolean(category.engineering && engineeringAvailable);
-            const code = selectedTroopCode(values, includeEngineering);
-            const blocks = ['G','S','M'].map(selector => {
-              const key = `${selector}${values[selector]}`;
-              const family = families[troopFamilyBySelector[selector]] || {};
-              const entry = family[key];
-              if (!entry) return `<p class="troop-notes">No ${escapeHtml(troopLabels[selector])} data is available for ${escapeHtml(key)} yet.</p>`;
-              return `<div class="troop-family-result"><div class="troop-result-head"><strong>${escapeHtml(entry.label || key)}</strong><span class="troop-code">${escapeHtml(key)}</span></div><div class="troop-units">${(entry.units || []).map(unit => `<article class="troop-unit"><img src="${escapeHtml(unit.image || './data/troops/images/monster.svg')}" alt="${escapeHtml(unit.name)}"><div><strong>${escapeHtml(unit.name)}</strong><span>${escapeHtml((unit.aliases || []).join(' · '))}</span><span class="troop-count">${Number(unit.count || 0).toLocaleString()} troops</span></div></article>`).join('')}</div><p class="troop-notes">${escapeHtml(entry.notes || '')}</p></div>`;
-            });
-            if (includeEngineering) {
-              const key = `E${values.E}`;
-              const entry = (families.engineering || {})[key];
-              blocks.push(entry
-                ? `<div class="troop-family-result"><div class="troop-result-head"><strong>${escapeHtml(entry.label || key)}</strong><span class="troop-code">${escapeHtml(key)}</span></div><div class="troop-units">${(entry.units || []).map(unit => `<article class="troop-unit"><img src="${escapeHtml(unit.image || './data/troops/images/engineering.svg')}" alt="${escapeHtml(unit.name)}"><div><strong>${escapeHtml(unit.name)}</strong><span>${escapeHtml((unit.aliases || []).join(' · '))}</span><span class="troop-count">${Number(unit.count || 0).toLocaleString()} troops</span></div></article>`).join('')}</div><p class="troop-notes">${escapeHtml(entry.notes || '')}</p></div>`
-                : `<p class="troop-notes">No Engineering Corps data is available for ${escapeHtml(key)} yet.</p>`);
-            } else if (category.engineering) {
-              blocks.push('<p class="troop-notes">Engineering Corps data has not been added yet.</p>');
-            }
+            const code = selectedTroopCode(values, Boolean(category.engineering));
             const result = card.querySelector('[data-troop-result]');
-            result.innerHTML = `<div class="troop-result-head"><strong>${category.pvp ? 'Estimated enemy composition' : 'Selected composition'}</strong><span class="troop-code">${escapeHtml(code)}</span></div>${blocks.join('')}`;
+            const blocks = ['G','S','M','E'].filter(selector => selector !== 'E' || category.engineering).map(selector => {
+              const key = `${selector}${values[selector]}`;
+              const family = appState.troopFamilies[troopFamilyBySelector[selector]] || {};
+              const entry = family[key];
+              if (!entry) return `<div class="troop-notes">No ${escapeHtml(troopLabels[selector])} data is available for ${escapeHtml(key)} yet.</div>`;
+              return `<div class="troop-family-result"><div class="troop-result-head"><strong>${escapeHtml(entry.label || key)}</strong><span class="troop-code">${escapeHtml(key)}</span></div><div class="troop-units">${(entry.units || []).map(unit => `<article class="troop-unit"><img src="${escapeHtml(unit.image || './data/troops/images/placeholder.svg')}" alt="${escapeHtml(unit.name)} placeholder image"><div><strong>${escapeHtml(unit.name)}</strong><span>${escapeHtml((unit.aliases || []).join(' · '))}</span><span class="troop-count">${Number(unit.count || 0).toLocaleString()} troops</span></div></article>`).join('')}</div><p class="troop-notes">${escapeHtml(entry.notes || '')}</p></div>`;
+            }).join('');
+            result.innerHTML = `<div class="troop-result-head"><strong>${category.pvp ? 'Estimated enemy composition' : 'Selected composition'}</strong><span class="troop-code">${escapeHtml(code)}</span></div>${blocks}`;
           };
           card.querySelectorAll('[data-troop-selector]').forEach(select => select.addEventListener('change', update));
           update();
@@ -546,42 +459,18 @@
       function startCalendar() {
         const element = document.getElementById('event-calendar'); if (!element || !window.FullCalendar) return;
         if (appState.calendar) appState.calendar.destroy();
-        appState.calendar = new FullCalendar.Calendar(element, { initialView:'dayGridMonth', firstDay:1, height:'auto', fixedWeekCount:false, dayMaxEvents:false, headerToolbar:{ left:'prev,next today', center:'title', right:'' }, buttonText:{ today:'now' }, eventSources:[{ url:'./data/tb-events.ics', format:'ics' }], eventClassNames: arg => { const title = arg.event.title.toLowerCase(); if (title.includes('ragnar')) return ['ragnarok']; if (title.includes('dark omens')) return ['dark-omens']; if (title.includes('tinman')) return ['tinman']; return []; } });
+        appState.calendar = new FullCalendar.Calendar(element, { initialView:'dayGridMonth', firstDay:1, height:'auto', fixedWeekCount:false, dayMaxEvents:false, displayEventTime:false, headerToolbar:{ left:'prev,next today', center:'title', right:'' }, buttonText:{ today:'now' }, eventSources:[{ url:'./data/tb-events.ics', format:'ics' }], eventClassNames: arg => { const title = arg.event.title.toLowerCase(); if (title.includes('ragnar')) return ['ragnarok']; if (title.includes('dark omens')) return ['dark-omens']; if (title.includes('tinman')) return ['tinman']; return []; } });
         appState.calendar.render();
       }
-      async function initMoon() {
-        const [guides, checklist, categories, guardsmen, specialists, monsters, eventBonuses, darkOmensPoints, olympusPoints, ragnarokPoints] = await Promise.all([
-          fetchJson('./data/event-guides.json', fallbackGuides),
-          fetchJson('./data/daily-checklist.json', fallbackChecklist),
-          fetchJson('./data/troops/troop-categories.json', []),
-          fetchJson('./data/troops/guardsmen.json', {}),
-          fetchJson('./data/troops/specialists.json', {}),
-          fetchJson('./data/troops/monsters.json', {}),
-          fetchJson('./data/event-bonuses.json', {}),
-          fetchJson('./data/dark-omens-points.json', {}),
-          fetchJson('./data/olympus-points.json', {}),
-          fetchJson('./data/ragnarok-points.json', {})
-        ]);
-        appState.checklistItems = checklist;
-        appState.eventBonuses = eventBonuses;
-        appState.darkOmensPoints = darkOmensPoints;
-        appState.olympusPoints = olympusPoints;
-        appState.ragnarokPoints = ragnarokPoints;
-        renderGuides(guides);
-        renderChecklist(checklist, appState.calendarEvents);
-        renderTroopCalculator(categories, { guardsmen, specialists, monsters, engineering:{} });
-        startCalendar();
-      }
+      async function initMoon() { const [guides, checklist, categories, guardsmen, specialists, monsters, engineering, eventBonuses, darkOmensPoints, olympusPoints, ragnarokPoints] = await Promise.all([fetchJson('./data/event-guides.json',fallbackGuides),fetchJson('./data/daily-checklist.json',fallbackChecklist),fetchJson('./data/troops/troop-categories.json',[]),fetchJson('./data/troops/guardsmen.json',{}),fetchJson('./data/troops/specialists.json',{}),fetchJson('./data/troops/monsters.json',{}),fetchJson('./data/troops/engineering.json',{}),fetchJson('./data/event-bonuses.json',{}),fetchJson('./data/dark-omens-points.json',{}),fetchJson('./data/olympus-points.json',{}),fetchJson('./data/ragnarok-points.json',{})]); appState.checklistItems = checklist; appState.eventBonuses = eventBonuses; appState.darkOmensPoints = darkOmensPoints; appState.olympusPoints = olympusPoints; appState.ragnarokPoints = ragnarokPoints; renderGuides(guides); renderChecklist(checklist, appState.calendarEvents || []); renderTroopCalculator(categories, {guardsmen, specialists, monsters, engineering}); startCalendar(); }
       async function loadTheme(mode) {
         appState.mode = mode; const target = document.getElementById('site-body'); target.innerHTML = '<div class="empty-state">Opening the command ledger…</div>';
-        try { const response = await fetch(`./${mode}.html`); if (!response.ok) throw new Error('view unavailable'); const html = await response.text(); const source = new DOMParser().parseFromString(html,'text/html'); target.innerHTML = source.body.innerHTML; document.title = source.title || 'Moonwatch — Clan Command'; document.body.dataset.mode = mode; const meta = themeMeta[mode] || themeMeta.moon; document.title = meta.title; const brandMark = document.getElementById('brand-mark'); const brandName = document.getElementById('brand-name'); if (!brandMark) { brandMark.innerHTML='<img src="${meta.logo}" alt="PNX"'; brandMark.className = 'brand-mark' + (mode === 'moon' ? ' brand-mark' : ''); } if (brandName) { brandName.textContent = meta.name; brandName.className = 'brand-name' + (mode === 'royal' ? ' royal-word' : ''); } document.querySelector('.brand-kicker')?.classList.toggle('royal-kicker', mode === 'royal'); document.querySelector('.hero')?.classList.toggle('royal-hero', mode === 'royal'); document.querySelectorAll('.section-card').forEach(card => card.classList.toggle('royal-card', mode === 'royal')); document.querySelector('.section-nav')?.classList.toggle('royal-nav', mode === 'royal');
-         //document.querySelector('.theme-picker')?.classList.toggle('royal-theme', mode === 'royal');
-         if (mode === 'moon' || mode === 'sun' || mode === 'royal') await initMoon(); } catch { target.innerHTML = '<div class="empty-state">The requested command view could not be opened.</div>'; }
+        try { const response = await fetch(`./${mode}.html`); if (!response.ok) throw new Error('view unavailable'); const html = await response.text(); const source = new DOMParser().parseFromString(html,'text/html'); target.innerHTML = source.body.innerHTML; document.title = source.title || 'Moonwatch — Clan Command'; document.body.dataset.mode = mode; const meta = themeMeta[mode] || themeMeta.moon; document.title = meta.title; const brandMark = document.getElementById('brand-mark'); const brandName = document.getElementById('brand-name'); if (brandMark) { brandMark.textContent = meta.mark; brandMark.className = 'brand-mark' + (mode === 'royal' ? ' royal-mark' : ''); } if (brandName) { brandName.textContent = meta.name; brandName.className = 'brand-name' + (mode === 'royal' ? ' royal-word' : ''); } document.querySelector('.brand-kicker')?.classList.toggle('royal-kicker', mode === 'royal'); document.querySelector('.hero')?.classList.toggle('royal-hero', mode === 'royal'); document.querySelectorAll('.section-card').forEach(card => card.classList.toggle('royal-card', mode === 'royal')); document.querySelector('.section-nav')?.classList.toggle('royal-nav', mode === 'royal'); document.querySelector('.theme-picker')?.classList.toggle('royal-theme', mode === 'royal'); if (mode === 'moon' || mode === 'sun' || mode === 'royal') await initMoon(); } catch { target.innerHTML = '<div class="empty-state">The requested command view could not be opened.</div>'; }
         updateThemeControl();
       }
       function updateThemeControl() { const select = document.querySelector('[data-theme-select]'); if (select) select.value = appState.mode; }
       document.addEventListener('change', event => { const select = event.target.closest('[data-theme-select]'); if (select) loadTheme(select.value); });
-      document.addEventListener('click', event => { const ragnarokMonster = event.target.closest('[data-ragnarok-monster]'); const stageButton = event.target.closest('[data-olympus-stage]'); const scrollTarget = event.target.closest('[data-scroll-target]'); const loader = event.target.closest('[data-load-theme]'); const copy = event.target.closest('[data-copy]'); if (ragnarokMonster) updateRagnarokMonster(ragnarokMonster.dataset.ragnarokMonster); if (stageButton) updateOlympusStage(stageButton.dataset.olympusStage); if (scrollTarget) { event.preventDefault(); document.getElementById(scrollTarget.dataset.scrollTarget)?.scrollIntoView({behavior:'smooth',block:'start'}); } if (loader) { event.preventDefault(); loadTheme(loader.dataset.loadTheme); } if (copy && navigator.clipboard) { navigator.clipboard.writeText(copy.dataset.copy).then(() => { const original = copy.textContent; copy.textContent = 'Copied'; setTimeout(() => copy.textContent = original, 1100); }); } });
+      document.addEventListener('click', event => { const ragnarokMonster = event.target.closest('[data-ragnarok-monster]'); if (ragnarokMonster) { updateRagnarokMonster(ragnarokMonster.dataset.ragnarokMonster); } const stageButton = event.target.closest('[data-olympus-stage]'); if (stageButton) { updateOlympusStage(stageButton.dataset.olympusStage); } const scrollTarget = event.target.closest('[data-scroll-target]'); if (scrollTarget) { event.preventDefault(); document.getElementById(scrollTarget.dataset.scrollTarget)?.scrollIntoView({behavior:'smooth',block:'start'}); } const select = event.target.closest('[data-theme-select]'); const loader = event.target.closest('[data-load-theme]'); const copy = event.target.closest('[data-copy]'); if (loader) { event.preventDefault(); loadTheme(loader.dataset.loadTheme); } if (copy && navigator.clipboard) { navigator.clipboard.writeText(copy.dataset.copy).then(() => { const original = copy.textContent; copy.textContent = 'Copied'; setTimeout(() => copy.textContent = original, 1100); }); } });
       updateClock(); setInterval(updateClock,1000); hydrateActiveEvent();
       const requestedMode = new URLSearchParams(location.search).get('view'); const initialMode = ['moon','sun','royal'].includes(requestedMode) ? requestedMode : 'moon'; loadTheme(initialMode);
     </script>

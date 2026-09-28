@@ -4,43 +4,71 @@
     "name": "Olympus",
     "icon": "⌁",
     "cadence": "Five-day cycle",
-    "tagline": "more torchers for the torchbearers.",
+    "tagline": "Plan the route before the first horn.",
     "accent": "gold",
-    "brief": "recommended even application of talent. troop configuration coming soon below",
-    "signals": ["Chimera", "Basilisk", "Lava Fountain", "Tartaros", "Briareus"],
-    "callout": "SilverDay event - post your city location on MOONPLAY"
+    "calendarMatch": "Trials of Olympus|Olympus",
+    "background": "/manus-storage/moonwatch-command-bg_4d156c7b.jpg",
+    "brief": "Trials of Olympus is a five-stage rotation. Select the current Daily Trial to update the recommended epic monster and the stage-specific maximum-points table.",
+    "signals": [
+      "Confirm the current Olympus stage on the calendar",
+      "Select the matching Daily Trial before opening the epic troop example",
+      "Use the recommended talents as the starting clan pattern"
+    ],
+    "callout": "Olympus stage names, talents, and point placeholders are editable in data/event-bonuses.json and data/olympus-points.json.",
+    "epicTarget": "Chimera"
   },
   {
     "id": "ragnarok",
     "name": "Ragnarök",
     "icon": "ϟ",
     "cadence": "Two-day cycle",
-    "tagline": "an opportunity to take big leaps.",
+    "tagline": "Keep marches, timing and recalls in one rhythm.",
     "accent": "violet",
-    "brief": "troop configuuration coming soon below",
-    "signals": ["Jormungandir", "Fenrir"],
-    "callout": "Recomended buy:VP, XP, chests, Tar, Dragon Keys"
+    "calendarMatch": "Ragnarök|Ragnarok",
+    "background": "/manus-storage/moonwatch-command-bg_4d156c7b.jpg",
+    "brief": "Ragnarök is a two-day rotation. Select the active Epic Monster to update the recommended shop list and the matching troop reference.",
+    "signals": [
+      "Confirm whether Jormungandir or Fenrir is active",
+      "Use the matching shop recommendation before spending event currency",
+      "Keep an active army ready for defence"
+    ],
+    "callout": "Ragnarök monster, shop, and point placeholders are editable in data/event-bonuses.json and data/ragnarok-points.json.",
+    "epicTarget": "Jormungandir"
   },
   {
     "id": "dark-omens",
     "name": "Dark Omens",
     "icon": "◈",
     "cadence": "Two-day cycle",
-    "tagline": "fight hard. defend harder.",
+    "tagline": "Turn scattered alerts into a clear night watch.",
     "accent": "crimson",
-    "brief": "if you wil not be abe to fully participate in the two-day window, please let the clan know early.",
-    "signals": ["R", "R+8", "R-8", "R-2"],
-    "callout": "SilverDay event - post your city location on MOONPLAY"
+    "calendarMatch": "Dark Omens",
+    "background": "/manus-storage/moonwatch-command-bg_4d156c7b.jpg",
+    "epicTarget": "Acronomancer",
+    "brief": "Dark Omens is a two-day response window. Keep the clan’s march plan visible, use the reset markers below, and preserve a defensive army while points are being gathered.",
+    "signals": [
+      "Open the Acronomancer troop example before sending a march",
+      "Watch R, R+7, R-8 and R-2 for the event window",
+      "Keep an active army ready for defence"
+    ],
+    "callout": "Dark Omens briefing data is editable in data/event-bonuses.json and data/dark-omens-points.json."
   },
   {
     "id": "tinman",
     "name": "Tinman",
     "icon": "◇",
-    "cadence": "SUMMONS:5 TIME:11mins",
-    "tagline": "make it to atleast one summon",
+    "cadence": "Clan briefing slot",
+    "tagline": "Keep the playbook ready for the next appearance.",
     "accent": "silver",
-    "brief": "try to reach atleast the first set of Scrolls of Triumph",
-    "signals": ["R+1", "R+6", "R+12", "R-6", "R-1"],
-    "callout": "SilverDay event - post your city location on MOONPLAY"
+    "calendarMatch": "Tinman|Rise of the Ancients",
+    "background": "/manus-storage/moonwatch-command-bg_4d156c7b.jpg",
+    "brief": "Tinman follows the same reset-aware command pattern as the Dark Omens briefing. Keep the clan’s march plan visible, use the reset markers below, and preserve a defensive army while points are being gathered.",
+    "signals": [
+      "Open the Tinman troop example before sending a march",
+      "Watch R, R+7, R-8 and R-2 for the event window",
+      "Keep an active army ready for defence"
+    ],
+    "callout": "Tinman briefing data is editable in data/event-bonuses.json and data/dark-omens-points.json.",
+    "epicTarget": "Tinman"
   }
 ]

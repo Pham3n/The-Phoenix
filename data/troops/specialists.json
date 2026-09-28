@@ -1,0 +1,182 @@
+{
+  "S3": {
+    "label": "Specialists 3",
+    "units": [
+      {
+        "name": "Shield Wardens",
+        "aliases": [
+          "Defenders"
+        ],
+        "count": 300,
+        "image": "./data/troops/images/specialist.svg"
+      },
+      {
+        "name": "Rangers",
+        "aliases": [
+          "Ranged Specialists"
+        ],
+        "count": 250,
+        "image": "./data/troops/images/specialist.svg"
+      },
+      {
+        "name": "Lancers",
+        "aliases": [
+          "Specialist Mounted"
+        ],
+        "count": 150,
+        "image": "./data/troops/images/specialist.svg"
+      }
+    ],
+    "notes": "Placeholder example \u2014 replace the counts and unit names with clan-tested values."
+  },
+  "S4": {
+    "label": "Specialists 4",
+    "units": [
+      {
+        "name": "Shield Wardens",
+        "aliases": [
+          "Defenders"
+        ],
+        "count": 450,
+        "image": "./data/troops/images/specialist.svg"
+      },
+      {
+        "name": "Rangers",
+        "aliases": [
+          "Ranged Specialists"
+        ],
+        "count": 350,
+        "image": "./data/troops/images/specialist.svg"
+      },
+      {
+        "name": "Lancers",
+        "aliases": [
+          "Specialist Mounted"
+        ],
+        "count": 220,
+        "image": "./data/troops/images/specialist.svg"
+      }
+    ],
+    "notes": "Placeholder example \u2014 replace the counts and unit names with clan-tested values."
+  },
+  "S5": {
+    "label": "Specialists 5",
+    "units": [
+      {
+        "name": "Shield Wardens",
+        "aliases": [
+          "Defenders"
+        ],
+        "count": 600,
+        "image": "./data/troops/images/specialist.svg"
+      },
+      {
+        "name": "Rangers",
+        "aliases": [
+          "Ranged Specialists"
+        ],
+        "count": 500,
+        "image": "./data/troops/images/specialist.svg"
+      },
+      {
+        "name": "Lancers",
+        "aliases": [
+          "Specialist Mounted"
+        ],
+        "count": 300,
+        "image": "./data/troops/images/specialist.svg"
+      }
+    ],
+    "notes": "Placeholder example \u2014 replace the counts and unit names with clan-tested values."
+  },
+  "S6": {
+    "label": "Specialists 6",
+    "units": [
+      {
+        "name": "Shield Wardens",
+        "aliases": [
+          "Defenders"
+        ],
+        "count": 800,
+        "image": "./data/troops/images/specialist.svg"
+      },
+      {
+        "name": "Rangers",
+        "aliases": [
+          "Ranged Specialists"
+        ],
+        "count": 700,
+        "image": "./data/troops/images/specialist.svg"
+      },
+      {
+        "name": "Lancers",
+        "aliases": [
+          "Specialist Mounted"
+        ],
+        "count": 450,
+        "image": "./data/troops/images/specialist.svg"
+      }
+    ],
+    "notes": "Placeholder example \u2014 replace the counts and unit names with clan-tested values."
+  },
+  "S7": {
+    "label": "Specialists 7",
+    "units": [
+      {
+        "name": "Shield Wardens",
+        "aliases": [
+          "Defenders"
+        ],
+        "count": 1050,
+        "image": "./data/troops/images/specialist.svg"
+      },
+      {
+        "name": "Rangers",
+        "aliases": [
+          "Ranged Specialists"
+        ],
+        "count": 900,
+        "image": "./data/troops/images/specialist.svg"
+      },
+      {
+        "name": "Lancers",
+        "aliases": [
+          "Specialist Mounted"
+        ],
+        "count": 600,
+        "image": "./data/troops/images/specialist.svg"
+      }
+    ],
+    "notes": "Placeholder example \u2014 replace the counts and unit names with clan-tested values."
+  },
+  "S8": {
+    "label": "Specialists 8",
+    "units": [
+      {
+        "name": "Shield Wardens",
+        "aliases": [
+          "Defenders"
+        ],
+        "count": 1350,
+        "image": "./data/troops/images/specialist.svg"
+      },
+      {
+        "name": "Rangers",
+        "aliases": [
+          "Ranged Specialists"
+        ],
+        "count": 1150,
+        "image": "./data/troops/images/specialist.svg"
+      },
+      {
+        "name": "Lancers",
+        "aliases": [
+          "Specialist Mounted"
+        ],
+        "count": 800,
+        "image": "./data/troops/images/specialist.svg"
+      }
+    ],
+    "notes": "Placeholder example \u2014 replace the counts and unit names with clan-tested values."
+  }
+}
