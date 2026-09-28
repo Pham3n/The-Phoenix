@@ -1,0 +1,128 @@
+{
+  "dark-omens": {
+    "eventName": "Dark Omens",
+    "activeBonuses": [
+      "Troop Training Speed",
+      "Army Strength",
+      "Army Health",
+      "Food Production"
+    ],
+    "openWindows": [
+      "R",
+      "R+7",
+      "R-8",
+      "R-2"
+    ],
+    "defenceNote": "Keep an active army ready for defence throughout the event window; do not empty the city while chasing points."
+  },
+  "tinman": {
+    "eventName": "Tinman",
+    "activeBonuses": [
+      "Troop Training Speed",
+      "Army Strength",
+      "Army Health",
+      "Food Production"
+    ],
+    "openWindows": [
+      "R",
+      "R+7",
+      "R-8",
+      "R-2"
+    ],
+    "defenceNote": "Keep an active army ready for defence throughout the event window; do not empty the city while chasing points."
+  },
+  "olympus": {
+    "eventName": "Olympus",
+    "activeBonuses": [
+      "Troop Training Speed",
+      "Army Strength",
+      "Army Health",
+      "Food Production"
+    ],
+    "dailyTrials": [
+      {
+        "stage": "Stage 1",
+        "epicLabel": "Epic Chimera",
+        "epicTarget": "Chimera"
+      },
+      {
+        "stage": "Stage 2",
+        "epicLabel": "Epic Basilisk",
+        "epicTarget": "Basilisk"
+      },
+      {
+        "stage": "Stage 3",
+        "epicLabel": "Lava Fountains",
+        "epicTarget": "Lava Fountains"
+      },
+      {
+        "stage": "Stage 4",
+        "epicLabel": "Salamander",
+        "epicTarget": "Salamander"
+      },
+      {
+        "stage": "Stage 5",
+        "epicLabel": "Epic Briareu",
+        "epicTarget": "Briareu"
+      }
+    ],
+    "defenceNote": "Keep an active army ready for defence throughout the event window; do not empty the city while chasing points.",
+    "recommendedTalents": [
+      {
+        "stage": "Stage 1",
+        "value": "50%"
+      },
+      {
+        "stage": "Stage 2",
+        "value": "50%"
+      },
+      {
+        "stage": "Stage 3",
+        "value": "50%"
+      },
+      {
+        "stage": "Stage 4",
+        "value": "50%"
+      },
+      {
+        "stage": "Stage 5",
+        "value": "25%"
+      }
+    ]
+  },
+  "ragnarok": {
+    "eventName": "Ragnarök",
+    "activeBonuses": [
+      "Troop Training Speed",
+      "Army Strength",
+      "Army Health",
+      "Food Production"
+    ],
+    "epicMonsters": [
+      {
+        "label": "Jormungandir",
+        "epicLabel": "Epic Jormungandir",
+        "target": "Jormungandir"
+      },
+      {
+        "label": "Fenrir",
+        "epicLabel": "Epic Fenrir",
+        "target": "Fenrir"
+      }
+    ],
+    "shopRecommendations": {
+      "Jormungandir": [
+        "XP",
+        "VP",
+        "Chests",
+        "red books"
+      ],
+      "Fenrir": [
+        "days speedups",
+        "common tar",
+        "epic tar"
+      ]
+    },
+    "defenceNote": "Keep an active army ready for defence throughout the event window; do not empty the city while chasing points."
+  }
+}
